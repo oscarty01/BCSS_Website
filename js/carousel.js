@@ -15,18 +15,33 @@ class Carousel {
     
     init() {
         // Add click events to controls
-        this.prevBtn.addEventListener('click', () => this.previousSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
+        this.prevBtn.addEventListener('click', () => {
+            this.previousSlide();
+            this.resetAutoPlay();
+        });
+        this.nextBtn.addEventListener('click', () => {
+            this.nextSlide();
+            this.resetAutoPlay();
+        });
         
         // Add click events to indicators
         this.indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => this.goToSlide(index));
+            indicator.addEventListener('click', () => {
+                this.goToSlide(index);
+                this.resetAutoPlay();
+            });
         });
         
         // Add keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') this.previousSlide();
-            if (e.key === 'ArrowRight') this.nextSlide();
+            if (e.key === 'ArrowLeft') {
+                this.previousSlide();
+                this.resetAutoPlay();
+            }
+            if (e.key === 'ArrowRight') {
+                this.nextSlide();
+                this.resetAutoPlay();
+            }
         });
         
         // Pause autoplay on hover
@@ -76,6 +91,11 @@ class Carousel {
         }
     }
     
+    resetAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+    }
+    
     addTouchSupport() {
         let touchStartX = 0;
         let touchEndX = 0;
@@ -98,9 +118,11 @@ class Carousel {
             if (diff > 0) {
                 // Swipe left - next slide
                 this.nextSlide();
+                this.resetAutoPlay();
             } else {
                 // Swipe right - previous slide
                 this.previousSlide();
+                this.resetAutoPlay();
             }
         }
     }

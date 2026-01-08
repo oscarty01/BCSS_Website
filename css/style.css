@@ -91,10 +91,16 @@ img {
     cursor: pointer;
     padding: 2px 5px;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .font-size-btn:hover {
     transform: scale(1.1);
+}
+
+.font-size-btn.active {
+    color: #000000;
+    font-weight: 700;
 }
 
 .font-size-btn[data-size="small"] {
@@ -132,28 +138,33 @@ img {
 }
 
 .social-icons a {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: rgba(255,255,255,0.2);
     transition: all 0.3s ease;
+    padding: 5px;
 }
 
 .social-icons a:hover {
     background: var(--white);
-    color: var(--primary-green);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
 }
 
-/* Icon placeholders (you can replace with actual icons or icon fonts) */
-.social-icons .icon-facebook::before { content: "f"; }
-.social-icons .icon-instagram::before { content: "i"; }
-.social-icons .icon-whatsapp::before { content: "w"; }
-.social-icons .icon-youtube::before { content: "y"; }
-.social-icons .icon-linkedin::before { content: "in"; }
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: none;
+}
 
 /* Main Header */
 .main-header {
@@ -243,6 +254,75 @@ img {
     box-shadow: 0 4px 8px rgba(127, 182, 64, 0.3);
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 180px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    margin-top: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--text-dark);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.dropdown-menu a::after {
+    display: none;
+}
+
+.dropdown-menu a:hover {
+    background: var(--light-green);
+    color: var(--primary-green);
+    padding-left: 20px;
+}
+
 /* Mobile Menu Toggle */
 .mobile-menu-toggle {
     display: none;
@@ -272,7 +352,7 @@ img {
 .carousel {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -291,23 +371,24 @@ img {
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
     background: var(--light-green);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .carousel-slide.active {
     opacity: 1;
-}
-
-/* Different background colors for slides */
-.carousel-slide:nth-child(1) {
-    background: linear-gradient(135deg, var(--light-green) 0%, var(--primary-green) 100%);
-}
-
-.carousel-slide:nth-child(2) {
-    background: linear-gradient(135deg, #c8e6c9 0%, #7fb640 100%);
-}
-
-.carousel-slide:nth-child(3) {
-    background: linear-gradient(135deg, #dcedc8 0%, #8bc34a 100%);
 }
 
 .carousel-content {
@@ -318,20 +399,30 @@ img {
     text-align: center;
     color: var(--white);
     padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-content .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-content h2 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     line-height: 1.3;
 }
 
 .carousel-content p {
     font-size: 20px;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .btn-primary {
@@ -536,10 +627,6 @@ img {
     width: fit-content;
 }
 
-.partners-scroll:hover {
-    animation-play-state: paused;
-}
-
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -593,15 +680,15 @@ img {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    max-width: 1100px;
+    gap: 30px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
 .service-card {
     background: var(--primary-green);
-    border-radius: 18px;
-    padding: 50px 35px;
+    border-radius: 16px;
+    padding: 35px 25px;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -609,13 +696,13 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 220px;
+    min-height: 180px;
     text-decoration: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.18);
     background: var(--dark-green);
 }
@@ -629,15 +716,15 @@ img {
 }
 
 .service-icon {
-    width: 85px;
-    height: 85px;
-    margin-bottom: 25px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
     background: rgba(255,255,255,0.25);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 16px;
     transition: all 0.3s ease;
 }
 
@@ -655,7 +742,7 @@ img {
 
 .service-title {
     color: var(--white);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
     line-height: 1.4;
@@ -739,19 +826,19 @@ img {
    Support Section
    =========================== */
 .support-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: #f9f9f9;
 }
 
 .support-section .section-title {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .support-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    max-width: 1100px;
+    gap: 35px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -763,13 +850,13 @@ img {
 }
 
 .support-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .support-image {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 25px;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -794,7 +881,7 @@ img {
 }
 
 .support-label {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-dark);
     font-weight: 600;
     margin: 0;
@@ -952,6 +1039,45 @@ img {
     .main-nav a {
         display: block;
         padding: 15px 10px;
+    }
+    
+    /* Dropdown mobile styles */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 5px 8px;
+        border-radius: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        max-height: 200px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        padding: 5px 8px;
+    }
+    
+    .dropdown-menu a {
+        padding: 12px 20px 12px 30px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin: 2px 0;
+    }
+    
+    .dropdown-menu a:hover {
+        padding-left: 35px;
+    }
+    
+    .dropdown-arrow {
+        margin-left: auto;
+    }
+    
+    .dropdown.active .dropdown-arrow {
+        transform: rotate(180deg);
     }
     
     .logo {

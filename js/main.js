@@ -12,28 +12,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // Dropdown menu toggle for mobile
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            // Only prevent default on mobile
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const dropdown = toggle.closest('.dropdown');
+                dropdown.classList.toggle('active');
+                
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown').forEach(other => {
+                    if (other !== dropdown) {
+                        other.classList.remove('active');
+                    }
+                });
+            }
+        });
+    });
+    
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.main-header')) {
             mainNav?.classList.remove('active');
             mobileMenuToggle?.classList.remove('active');
+            // Close all dropdowns
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
         }
     });
     
-    // Close mobile menu when clicking a link
+    // Close mobile menu when clicking a dropdown link
     const navLinks = document.querySelectorAll('.main-nav a');
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mainNav?.classList.remove('active');
-            mobileMenuToggle?.classList.remove('active');
+        link.addEventListener('click', (e) => {
+            // Don't close if it's the dropdown toggle itself
+            if (!link.classList.contains('dropdown-toggle')) {
+                mainNav?.classList.remove('active');
+                mobileMenuToggle?.classList.remove('active');
+            }
         });
     });
     
-    // Font size control (placeholder - not functional)
-    // Disabled for now - just visual placeholders
-    /*
+    // Font size control
     const fontSizeBtns = document.querySelectorAll('.font-size-btn');
     const root = document.documentElement;
+    
+    // Set small as default active
+    const smallBtn = document.querySelector('.font-size-btn[data-size="small"]');
+    if (smallBtn) {
+        smallBtn.classList.add('active');
+    }
     
     fontSizeBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -57,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    */
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
