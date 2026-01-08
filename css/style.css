@@ -170,24 +170,29 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-.logo img {
-    width: 80px;
-    height: 80px;
+.logo-link {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-zebrago {
+    height: 70px;
+    width: auto;
     object-fit: contain;
 }
 
-.logo-text h1 {
-    font-size: 28px;
-    color: var(--primary-green);
-    margin-bottom: 0;
-}
-
-.logo-text p {
-    font-size: 14px;
-    color: var(--text-light);
+.logo-bscc {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Navigation */
@@ -949,12 +954,16 @@ img {
         padding: 15px 10px;
     }
     
-    .logo-text h1 {
-        font-size: 22px;
+    .logo {
+        gap: 15px;
     }
     
-    .logo-text p {
-        font-size: 12px;
+    .logo-zebrago {
+        height: 55px;
+    }
+    
+    .logo-bscc {
+        height: 50px;
     }
     
     .carousel {
