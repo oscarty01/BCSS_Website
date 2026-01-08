@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Font size control
+    // Font size control (placeholder - not functional)
+    // Disabled for now - just visual placeholders
+    /*
     const fontSizeBtns = document.querySelectorAll('.font-size-btn');
     const root = document.documentElement;
     
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    */
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

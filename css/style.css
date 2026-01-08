@@ -67,15 +67,17 @@ img {
 
 .top-bar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 8px 20px;
+    gap: 30px;
 }
 
 .font-size-control {
     display: flex;
     align-items: center;
     gap: 10px;
+    order: 1;
 }
 
 .font-size-label {
@@ -111,6 +113,7 @@ img {
     display: flex;
     align-items: center;
     gap: 20px;
+    order: 2;
 }
 
 .lang-switch, .simple-chinese {
@@ -416,7 +419,7 @@ img {
    Stats Section
    =========================== */
 .stats-section {
-    padding: 80px 0;
+    padding: 80px 0 20px;
     background: linear-gradient(to bottom, #f8fdf4 0%, #ffffff 100%);
 }
 
@@ -484,7 +487,7 @@ img {
    Partners Gallery Section
    =========================== */
 .partners-section {
-    padding: 60px 0;
+    padding: 20px 0 60px;
     background: var(--white);
     overflow: hidden;
 }
@@ -578,22 +581,22 @@ img {
    Services Section
    =========================== */
 .services-section {
-    padding: 70px 0;
+    padding: 70px 0 40px;
     background: #f5f5f5;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    gap: 35px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .service-card {
     background: var(--primary-green);
-    border-radius: 15px;
-    padding: 40px 30px;
+    border-radius: 18px;
+    padding: 50px 35px;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -601,14 +604,14 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: 220px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
     background: var(--dark-green);
 }
 
@@ -621,15 +624,21 @@ img {
 }
 
 .service-icon {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,0.3);
+    width: 85px;
+    height: 85px;
+    margin-bottom: 25px;
+    background: rgba(255,255,255,0.25);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: rgba(255,255,255,0.35);
+    transform: scale(1.08);
 }
 
 .service-icon img {
@@ -651,8 +660,8 @@ img {
    News/Article Section
    =========================== */
 .news-section {
-    padding: 80px 0;
-    background: var(--white);
+    padding: 40px 0 80px;
+    background: #f5f5f5;
 }
 
 .news-content {
@@ -800,53 +809,53 @@ img {
 }
 
 .footer-content {
-    padding: 50px 0 30px;
+    padding: 25px 0;
 }
 
 .footer-main {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
 }
 
 .footer-links {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     flex: 1;
+    align-items: center;
 }
 
 .footer-column {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .footer-link {
     color: var(--white);
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     transition: all 0.3s ease;
     opacity: 0.95;
+    white-space: nowrap;
 }
 
 .footer-link:hover {
     opacity: 1;
-    transform: translateX(5px);
     text-decoration: underline;
 }
 
 .footer-contact {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .btn-contact-footer {
     background: var(--white);
     color: var(--primary-green);
-    padding: 12px 30px;
+    padding: 10px 28px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -862,14 +871,14 @@ img {
 
 .footer-bottom {
     background: rgba(0,0,0,0.1);
-    padding: 20px 0;
+    padding: 12px 0;
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 .copyright {
     text-align: center;
     color: var(--white);
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
     opacity: 0.9;
 }
@@ -990,10 +999,18 @@ img {
     }
     
     /* Services Section Tablet */
+    .services-section {
+        padding: 60px 0 35px;
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
         max-width: 500px;
+    }
+    
+    .service-card {
+        min-height: 190px;
     }
     
     /* Support Section Tablet */
@@ -1003,15 +1020,33 @@ img {
     }
     
     /* Footer Tablet */
+    .footer-content {
+        padding: 25px 0;
+    }
+    
     .footer-links {
-        gap: 50px;
+        gap: 40px;
+    }
+    
+    .footer-column {
+        gap: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .top-bar .container {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .font-size-control {
+        order: 1;
+    }
+    
+    .top-links {
+        order: 2;
     }
     
     .carousel {
@@ -1080,19 +1115,28 @@ img {
     }
     
     /* Services Section Mobile */
+    .services-section {
+        padding: 50px 0 30px;
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
     .service-card {
-        padding: 30px 25px;
-        min-height: 150px;
+        padding: 35px 25px;
+        min-height: 170px;
+    }
+    
+    .service-icon {
+        width: 75px;
+        height: 75px;
     }
     
     /* News Section Mobile */
     .news-section {
-        padding: 50px 0;
+        padding: 30px 0 50px;
     }
     
     .news-content {
@@ -1138,22 +1182,23 @@ img {
     
     /* Footer Mobile */
     .footer-content {
-        padding: 40px 0 25px;
+        padding: 25px 0 20px;
     }
     
     .footer-main {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
     
     .footer-links {
         flex-direction: column;
-        gap: 25px;
+        gap: 18px;
         width: 100%;
     }
     
     .footer-column {
-        gap: 12px;
+        gap: 15px;
+        flex-direction: column;
     }
     
     .footer-link {
@@ -1167,15 +1212,16 @@ img {
     
     .btn-contact-footer {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
         text-align: center;
+        padding: 9px 25px;
     }
     
     .footer-bottom {
-        padding: 18px 0;
+        padding: 10px 0;
     }
     
     .copyright {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
