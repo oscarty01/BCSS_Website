@@ -1407,7 +1407,7 @@ img {
     
     /* Stats Section Mobile */
     .stats-section {
-        padding: 50px 0;
+        padding: 50px 0 10px;
     }
     
     .stats-grid {
@@ -1436,11 +1436,11 @@ img {
     
     /* Partners Section Mobile */
     .partners-section {
-        padding: 40px 0;
+        padding: 10px 0 40px;
     }
     
     .partners-section .section-title {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
     
     .partner-item {
@@ -1476,7 +1476,7 @@ img {
     
     /* News Section Mobile */
     .news-section {
-        padding: 30px 0 50px;
+        padding: 30px 0 20px;
     }
     
     .news-content {
@@ -1513,7 +1513,7 @@ img {
     
     /* Support Section Mobile */
     .support-section {
-        padding: 40px 0;
+        padding: 20px 0;
     }
     
     .support-section .section-title {
