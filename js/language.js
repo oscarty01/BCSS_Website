@@ -11,6 +11,9 @@ const translations = {
         'nav.corporate': '企業服務',
         'nav.news': '新聞發佈',
         'nav.support': '支持我們',
+        'nav.donation': '愛心捐獻',
+        'nav.products': '周邊產品',
+        'nav.specialProjects': '特別項目',
         'nav.contact': '查詢服務',
         
         // Carousel
@@ -49,7 +52,7 @@ const translations = {
         // Support
         'support.donation': '愛心捐獻',
         'support.products': '周邊產品',
-        'support.join': '加入我們',
+        'support.specialProjects': '特別項目',
         
         // Footer
         'footer.privacy': '私隱聲明',
@@ -80,6 +83,9 @@ const translations = {
         'nav.corporate': '企业服务',
         'nav.news': '新闻发布',
         'nav.support': '支持我们',
+        'nav.donation': '爱心捐献',
+        'nav.products': '周边产品',
+        'nav.specialProjects': '特别项目',
         'nav.contact': '查询服务',
         
         // Carousel
@@ -118,7 +124,7 @@ const translations = {
         // Support
         'support.donation': '爱心捐献',
         'support.products': '周边产品',
-        'support.join': '加入我们',
+        'support.specialProjects': '特别项目',
         
         // Footer
         'footer.privacy': '隐私声明',
@@ -149,6 +155,9 @@ const translations = {
         'nav.corporate': 'Corporate Services',
         'nav.news': 'News',
         'nav.support': 'Support Us',
+        'nav.donation': 'Donations',
+        'nav.products': 'Merchandise',
+        'nav.specialProjects': 'Special Projects',
         'nav.contact': 'Inquiry Service',
         
         // Carousel
@@ -187,7 +196,7 @@ const translations = {
         // Support
         'support.donation': 'Donations',
         'support.products': 'Merchandise',
-        'support.join': 'Join Us',
+        'support.specialProjects': 'Special Projects',
         
         // Footer
         'footer.privacy': 'Privacy Statement',
