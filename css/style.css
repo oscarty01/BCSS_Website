@@ -8,9 +8,9 @@
 }
 
 :root {
-    --primary-green: #7fb640;
-    --dark-green: #6a9e35;
-    --light-green: #d4e5c3;
+    --primary-green: #2D9CDB;  /* Professional teal */
+    --dark-green: #1E6FA8;     /* Darker teal for hover states */
+    --light-green: #E0F7FA;    /* Very light teal for backgrounds */
     --text-dark: #333;
     --text-light: #666;
     --white: #ffffff;
@@ -21,7 +21,7 @@ html {
     width: 100%;
     overflow-x: hidden;
     /* Default zoom to 150% for desktop users */
-    zoom: 1.5;
+    zoom: 1.2;
 }
 
 body {
@@ -262,7 +262,7 @@ img {
 .btn-contact:hover {
     background: var(--dark-green);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(127, 182, 64, 0.3);
+    box-shadow: 0 4px 8px rgba(45, 156, 219, 0.3);
 }
 
 /* Dropdown Menu */
@@ -727,11 +727,11 @@ img {
 }
 
 .service-card-highlight {
-    background: #9fc84a;
+    background: var(--primary-green);  /* Same teal as other cards */
 }
 
 .service-card-highlight:hover {
-    background: #8bb83a;
+    background: var(--dark-green);  /* Same hover effect as other cards */
 }
 
 .service-icon {
@@ -876,7 +876,7 @@ img {
 .btn-read-more:hover {
     background: var(--dark-green);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(127, 182, 64, 0.3);
+    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
 }
 
 /* ===========================
