@@ -79,20 +79,28 @@ class Carousel {
     }
     
     startAutoPlay() {
-        this.slideInterval = setInterval(() => {
+        // Clear any existing interval first
+        this.pauseAutoPlay();
+        
+        // Use setTimeout instead of setInterval for better control
+        this.slideInterval = setTimeout(() => {
             this.nextSlide();
+            // Schedule the next one
+            this.startAutoPlay();
         }, this.autoPlayDelay);
     }
     
     pauseAutoPlay() {
         if (this.slideInterval) {
-            clearInterval(this.slideInterval);
+            clearTimeout(this.slideInterval);
             this.slideInterval = null;
         }
     }
     
     resetAutoPlay() {
+        // Immediately clear any pending timeout
         this.pauseAutoPlay();
+        // Start fresh timer
         this.startAutoPlay();
     }
     
