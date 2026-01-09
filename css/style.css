@@ -1,5 +1,5 @@
 /* ===========================
-   Global Styles & Reset
+    Global Styles & Reset
    =========================== */
 * {
     margin: 0;
@@ -289,8 +289,11 @@ img {
     }
 
 .dropdown-arrow {
-    font-size: 10px;
+    font-size: 12px;
     transition: transform 0.3s ease;
+    margin-left: 5px;
+    display: inline-block;
+    color: var(--text-dark);
 }
 
 .dropdown:hover .dropdown-arrow {

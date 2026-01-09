@@ -269,7 +269,16 @@ class LanguageSwitcher {
         document.querySelectorAll('[data-lang]').forEach(element => {
             const key = element.getAttribute('data-lang');
             if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
+                // Check if element contains a dropdown arrow - preserve it
+                const dropdownArrow = element.querySelector('.dropdown-arrow');
+                if (dropdownArrow) {
+                    // Preserve the arrow when updating text
+                    const arrowHTML = dropdownArrow.outerHTML;
+                    element.innerHTML = translations[lang][key] + ' ' + arrowHTML;
+                } else {
+                    // No arrow, just update text content
+                    element.textContent = translations[lang][key];
+                }
             }
         });
         
