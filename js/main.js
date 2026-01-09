@@ -64,16 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Font size control
+    // Font size control using zoom
     const fontSizeBtns = document.querySelectorAll('.font-size-btn');
-    const root = document.documentElement;
     
-    // Set small as default active
-    const smallBtn = document.querySelector('.font-size-btn[data-size="small"]');
-    if (smallBtn) {
-        smallBtn.classList.add('active');
-    }
+    // Get saved zoom setting or default to medium
+    const savedZoomSize = localStorage.getItem('zoom-size') || 'medium';
     
+    // Apply zoom level
+    const applyZoom = (size) => {
+        const zoomLevels = {
+            'small': '1',
+            'medium': '1.2',
+            'large': '1.5'
+        };
+        document.documentElement.style.zoom = zoomLevels[size];
+    };
+    
+    // Set the correct button as active based on saved setting
+    fontSizeBtns.forEach(btn => {
+        if (btn.dataset.size === savedZoomSize) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+    
+    // Add click handlers
     fontSizeBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const size = btn.dataset.size;
@@ -82,18 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
             fontSizeBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            // Adjust font size
-            switch(size) {
-                case 'small':
-                    root.style.fontSize = '14px';
-                    break;
-                case 'medium':
-                    root.style.fontSize = '16px';
-                    break;
-                case 'large':
-                    root.style.fontSize = '18px';
-                    break;
-            }
+            // Apply zoom and save to localStorage
+            applyZoom(size);
+            localStorage.setItem('zoom-size', size);
         });
     });
     

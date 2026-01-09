@@ -219,7 +219,7 @@ class LanguageSwitcher {
     }
     
     init() {
-        // Set up language switch buttons
+        // Set up language switch buttons with simple click handlers
         const engButton = document.querySelector('.lang-switch');
         const simpleChineseButton = document.querySelector('.simple-chinese');
         const traditionalChineseButton = document.querySelector('.traditional-chinese');
@@ -286,35 +286,20 @@ class LanguageSwitcher {
     }
     
     updateLanguageButtons(lang) {
-        const engButton = document.querySelector('.lang-switch');
-        const simpleChineseButton = document.querySelector('.simple-chinese');
-        const traditionalChineseButton = document.querySelector('.traditional-chinese');
+        // Get the 3 original buttons
+        const engButton = document.querySelector('.lang-switch[data-lang-switch="en"]');
+        const simpleChineseButton = document.querySelector('.simple-chinese[data-lang-switch="zh-CN"]');
+        const traditionalChineseButton = document.querySelector('.traditional-chinese[data-lang-switch="zh-HK"]');
         
-        // Show/hide buttons based on current language
-        // When a language is selected, show the other two options
-        if (engButton && simpleChineseButton && traditionalChineseButton) {
-            // Remove active class from all
-            engButton.classList.remove('active');
-            simpleChineseButton.classList.remove('active');
-            traditionalChineseButton.classList.remove('active');
-            
-            // Show/hide buttons based on current language
-            if (lang === 'zh-HK') {
-                // Show ENG and Simplified Chinese
-                engButton.style.display = '';
-                simpleChineseButton.style.display = '';
-                traditionalChineseButton.style.display = 'none';
-            } else if (lang === 'zh-CN') {
-                // Show ENG and Traditional Chinese
-                engButton.style.display = '';
-                simpleChineseButton.style.display = 'none';
-                traditionalChineseButton.style.display = '';
-            } else if (lang === 'en') {
-                // Show Traditional and Simplified Chinese
-                engButton.style.display = 'none';
-                simpleChineseButton.style.display = '';
-                traditionalChineseButton.style.display = '';
-            }
+        // Show/hide based on current language - always show the 2 that are NOT current
+        if (engButton) {
+            engButton.style.display = (lang === 'en') ? 'none' : '';
+        }
+        if (simpleChineseButton) {
+            simpleChineseButton.style.display = (lang === 'zh-CN') ? 'none' : '';
+        }
+        if (traditionalChineseButton) {
+            traditionalChineseButton.style.display = (lang === 'zh-HK') ? 'none' : '';
         }
     }
     

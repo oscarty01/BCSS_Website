@@ -6,6 +6,14 @@
     <title>私隱聲明 - 斑馬線ZebraGo</title>
     <link rel="icon" type="image/png" href="../images/General/web-icon.png">
     <link rel="stylesheet" href="../css/style.css">
+<script>
+        // Apply zoom immediately to prevent flash
+        (function() {
+            const savedZoomSize = localStorage.getItem('zoom-size') || 'medium';
+            const zoomLevels = { 'small': '1', 'medium': '1.2', 'large': '1.5' };
+            document.documentElement.style.zoom = zoomLevels[savedZoomSize];
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -13,8 +21,8 @@
         <div class="top-bar">
             <div class="container">
                 <div class="font-size-control">
-                    <button class="font-size-btn active" data-size="small">A</button>
-                    <button class="font-size-btn" data-size="medium">A</button>
+                    <button class="font-size-btn" data-size="small">A</button>
+                    <button class="font-size-btn active" data-size="medium">A</button>
                     <button class="font-size-btn" data-size="large">A</button>
                 </div>
                 <div class="top-links">
