@@ -36,7 +36,7 @@ const translations = {
         'stats.hoursUnit': '小時',
         
         // Sections
-        'section.partners': '合作夥伴',
+        'section.partners': '過往合作機構',
         'section.services': '我們的服務',
         'section.support': '支持我們',
         'section.news': '新聞發佈',
@@ -59,7 +59,7 @@ const translations = {
         'footer.contact': '聯絡我們',
         
         // News
-        'news.title': 'ZebraGo 流動車：高度客製化的流動精神健康服務',
+        'news.title': 'ZebraGo 流動車：客製化的流動精神健康服務',
         'news.intro': 'ZebraGo 是一輛專為學校及企業設計的流動服務車，可直接駛入校園或企業場所提供服務。車廂採用創新的可變間隔設計，能靈活分隔為兩個獨立訓練室，同時為不同使用者提供私密、安靜的治療環境。我們提供高度客製化的服務方案，可根據不同機構的需求量身訂造專屬計劃。',
         'news.tech.title': '沉浸式科技配合專業治療',
         'news.tech.content': '車內配備先進的沉浸式技術，結合多感官體驗、靜觀及表達藝術元素。我們的專業團隊包括語言治療師、職業治療師及遊戲治療師，為學校的學童提供語言治療、職業治療及遊戲治療等一對一或小組訓練，同時亦為企業員工提供壓力管理、團隊建設及心理健康支援服務。所有服務方案均可高度客製化，靈活配合不同機構的特定需求。',
