@@ -1063,51 +1063,47 @@ main {
    Responsive Design
    =========================== */
 @media (max-width: 1024px) {
-    .main-nav ul {
-        gap: 15px;
+    /* Tablet/iPad - Switch to mobile menu */
+    :root {
+        --header-height: 120px;
     }
     
-    .main-nav a {
-        font-size: 14px;
+    .top-bar {
+        font-size: 13px;
     }
     
-    .carousel-content h2 {
-        font-size: 34px;
-        line-height: 1.3;
+    .top-bar .container {
+        gap: 20px;
+        padding: 8px 15px;
     }
     
-    .carousel-content p {
-        font-size: 17px;
-        line-height: 1.4;
+    .font-size-control {
+        gap: 8px;
     }
     
-    .carousel-content .container {
-        max-width: 75%;
-    }
-}
-
-@media (max-width: 900px) {
-    .news-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Reset zoom to 100% for mobile devices */
-    html {
-        zoom: 1;
-    }
-    
-    .top-links {
-        gap: 10px;
+    .font-size-btn {
+        padding: 4px 10px;
+        font-size: 13px;
     }
     
     .lang-switch, .simple-chinese, .traditional-chinese {
-        padding: 4px 8px;
-        font-size: 12px;
+        padding: 5px 10px;
+        font-size: 13px;
     }
     
+    .main-header {
+        padding: 12px 0;
+    }
+    
+    .logo-container {
+        gap: 12px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    /* Enable mobile menu for tablets */
     .mobile-menu-toggle {
         display: flex;
     }
@@ -1145,6 +1141,7 @@ main {
         display: block;
         padding: 15px 10px;
         position: relative;
+        font-size: 14px;
     }
     
     /* Add spacing before the contact button - reduced gap, no border */
@@ -1152,25 +1149,23 @@ main {
         margin-top: 8px;
         padding-top: 8px;
         border-top: none;
+        border-bottom: none;
     }
     
-    /* Ensure the button link doesn't have underline overlap */
+    /* Dropdown styles for mobile/tablet */
     .main-nav .btn-contact {
         margin-top: 0;
     }
     
-    /* Add small margin to the item before the button to prevent underline overlap */
     .main-nav li:nth-last-child(2) {
         margin-bottom: 5px;
         padding-bottom: 10px;
     }
     
-    /* Keep underline - restore original behavior */
     .main-nav a::after {
         display: block;
     }
     
-    /* Adjust underline position for the item before button to prevent overlap with green button */
     .main-nav li:nth-last-child(2) a::after {
         bottom: 2px;
     }
@@ -1211,7 +1206,6 @@ main {
         border-bottom: 1px solid #eee;
     }
     
-    /* Dropdown mobile styles */
     .dropdown-menu {
         position: static !important;
         box-shadow: none;
@@ -1229,7 +1223,6 @@ main {
         transform: none !important;
     }
     
-    /* Disable hover effects in mobile - override desktop hover */
     .dropdown:hover .dropdown-menu {
         max-height: 0 !important;
         opacity: 0 !important;
@@ -1237,7 +1230,6 @@ main {
         transform: none !important;
     }
     
-    /* Active state must override hover */
     .dropdown.active .dropdown-menu {
         max-height: 150px !important;
         opacity: 1 !important;
@@ -1304,6 +1296,49 @@ main {
     
     .dropdown.active .dropdown-arrow {
         transform: rotate(180deg);
+    }
+    
+    .carousel-content h2 {
+        font-size: 34px;
+        line-height: 1.3;
+    }
+    
+    .carousel-content p {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    
+    .carousel-content .container {
+        max-width: 75%;
+    }
+    
+    /* Reduce spacing between sections on tablet */
+    .news-section {
+        padding: 40px 0 30px;
+    }
+    
+    .support-section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .news-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Phone-specific styles - mobile menu is already active from 1024px breakpoint */
+    
+    .top-links {
+        gap: 10px;
+    }
+    
+    .lang-switch, .simple-chinese, .traditional-chinese {
+        padding: 4px 8px;
+        font-size: 12px;
     }
     
     .logo {
@@ -1396,17 +1431,70 @@ main {
         gap: 20px;
     }
     
-    /* Footer Tablet */
+    /* Footer Tablet - Stack vertically */
     .footer-content {
         padding: 25px 0;
     }
     
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
     .footer-links {
-        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
     }
     
     .footer-column {
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .footer-link {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .footer-contact {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .btn-contact-footer {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 9px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Prevent overflow at smaller tablet/phone widths - keep 3 columns */
+    .support-section {
+        padding: 30px 0 20px;
+    }
+    
+    .support-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .support-image {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 10px;
+    }
+    
+    .support-label {
+        font-size: 13px;
     }
 }
 
@@ -1577,74 +1665,35 @@ main {
     
     /* Support Section Mobile */
     .support-section {
-        padding: 20px 0;
+        padding: 30px 0 20px;
     }
     
     .support-section .section-title {
         margin-bottom: 25px;
     }
     
-    .support-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-    }
-    
     .support-image {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         margin-bottom: 12px;
-        padding: 10px;
     }
     
     .support-label {
-        font-size: 14px;
+        font-size: 15px;
     }
     
-    .support-label {
-        font-size: 16px;
-    }
-    
-    /* Footer Mobile */
+    /* Footer Mobile - Small phone adjustments only */
     .footer-content {
         padding: 25px 0 20px;
     }
     
-    .footer-main {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-    
-    .footer-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        width: 100%;
-    }
-    
-    .footer-column {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-    
     .footer-link {
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    .footer-contact {
-        width: 100%;
-        justify-content: center;
+        font-size: 13px;
     }
     
     .btn-contact-footer {
-        width: 100%;
-        max-width: 280px;
-        text-align: center;
-        padding: 9px 25px;
+        padding: 8px 20px;
+        font-size: 14px;
     }
     
     .footer-bottom {
@@ -1652,6 +1701,6 @@ main {
     }
     
     .copyright {
-        font-size: 12px;
+        font-size: 11px;
     }
 }

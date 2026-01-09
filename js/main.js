@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', (e) => {
             const dropdown = toggle.closest('.dropdown');
-            // Only prevent default on mobile
-            if (window.innerWidth <= 768) {
+            // Only prevent default on mobile/tablet
+            if (window.innerWidth <= 1024) {
                 e.preventDefault();
                 e.stopPropagation();
                 const isActive = dropdown.classList.contains('active');
@@ -67,8 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Font size control using zoom
     const fontSizeBtns = document.querySelectorAll('.font-size-btn');
     
-    // Get saved zoom setting or default to medium
-    const savedZoomSize = localStorage.getItem('zoom-size') || 'medium';
+    // Default to 1x zoom for mobile/tablet devices, 1.2x for desktop
+    const isMobileOrTablet = window.innerWidth <= 1024;
+    const defaultZoom = isMobileOrTablet ? 'small' : 'medium';
+    const savedZoomSize = localStorage.getItem('zoom-size') || defaultZoom;
     
     // Apply zoom level
     const applyZoom = (size) => {

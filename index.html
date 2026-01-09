@@ -9,7 +9,10 @@
     <script>
         // Apply zoom immediately to prevent flash
         (function() {
-            const savedZoomSize = localStorage.getItem('zoom-size') || 'medium';
+            // Default to 1x zoom for mobile/tablet devices, 1.2x for desktop
+            const isMobileOrTablet = window.innerWidth <= 1024;
+            const defaultZoom = isMobileOrTablet ? 'small' : 'medium';
+            const savedZoomSize = localStorage.getItem('zoom-size') || defaultZoom;
             const zoomLevels = { 'small': '1', 'medium': '1.2', 'large': '1.5' };
             document.documentElement.style.zoom = zoomLevels[savedZoomSize];
         })();
