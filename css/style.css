@@ -20,6 +20,8 @@
 html {
     width: 100%;
     overflow-x: hidden;
+    /* Default zoom to 150% for desktop users */
+    zoom: 1.5;
 }
 
 body {
@@ -1072,6 +1074,11 @@ img {
 }
 
 @media (max-width: 768px) {
+    /* Reset zoom to 100% for mobile devices */
+    html {
+        zoom: 1;
+    }
+    
     .mobile-menu-toggle {
         display: flex;
     }
