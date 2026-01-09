@@ -133,14 +133,19 @@ img {
     order: 2;
 }
 
-.lang-switch, .simple-chinese {
+.lang-switch, .simple-chinese, .traditional-chinese {
     padding: 5px 10px;
     border-radius: 3px;
     transition: background 0.3s ease;
 }
 
-.lang-switch:hover, .simple-chinese:hover {
+.lang-switch:hover, .simple-chinese:hover, .traditional-chinese:hover {
     background: rgba(255,255,255,0.2);
+}
+
+.lang-switch.active, .simple-chinese.active, .traditional-chinese.active {
+    background: rgba(255,255,255,0.3);
+    font-weight: bold;
 }
 
 .social-icons {

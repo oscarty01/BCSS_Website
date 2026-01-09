@@ -18,8 +18,9 @@
                     <button class="font-size-btn" data-size="large">A</button>
                 </div>
                 <div class="top-links">
-                    <a href="#" class="lang-switch">ENG</a>
-                    <a href="#" class="simple-chinese">简体中文</a>
+                    <a href="#" class="lang-switch" data-lang-switch="en">ENG</a>
+                    <a href="#" class="simple-chinese" data-lang-switch="zh-CN">简体中文</a>
+                    <a href="#" class="traditional-chinese" data-lang-switch="zh-HK" style="display: none;">繁體中文</a>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/tpbcss.zebrago" aria-label="Facebook" target="_blank"><img src="images/Mainpage/banner/facebook.png" alt="Facebook"></a>
                         <a href="https://www.instagram.com/tpbcss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank"><img src="images/Mainpage/banner/instagram.png" alt="Instagram"></a>
@@ -44,18 +45,18 @@
                 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="pages/about.html">關於我們</a></li>
+                        <li><a href="pages/about.html" data-lang="nav.about">關於我們</a></li>
                         <li class="dropdown">
-                            <a href="#services" class="dropdown-toggle">我們的服務 <span class="dropdown-arrow">▼</span></a>
+                            <a href="#services" class="dropdown-toggle" data-lang="nav.services">我們的服務 <span class="dropdown-arrow">▼</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="pages/individual.html">個人服務</a></li>
-                                <li><a href="pages/school.html">學校服務</a></li>
-                                <li><a href="pages/corporate.html">企業服務</a></li>
+                                <li><a href="pages/individual.html" data-lang="nav.individual">個人服務</a></li>
+                                <li><a href="pages/school.html" data-lang="nav.school">學校服務</a></li>
+                                <li><a href="pages/corporate.html" data-lang="nav.corporate">企業服務</a></li>
                             </ul>
                         </li>
-                        <li><a href="pages/news.html">新聞發佈</a></li>
-                        <li><a href="pages/support.html">支持我們</a></li>
-                        <li><a href="pages/contact.html" class="btn-contact">查詢服務</a></li>
+                        <li><a href="pages/news.html" data-lang="nav.news">新聞發佈</a></li>
+                        <li><a href="pages/support.html" data-lang="nav.support">支持我們</a></li>
+                        <li><a href="pages/contact.html" class="btn-contact" data-lang="nav.contact">查詢服務</a></li>
                     </ul>
                 </nav>
                 
@@ -76,10 +77,10 @@
                 <div class="carousel-slide active" style="background-image: url('images/Mainpage/carousel/image1.jpg');">
                     <div class="carousel-content">
                         <div class="container">
-                            <h2>ZebraGo 流動精神健康及共融服務車</h2>
-                            <p>服務學校及企業，建構共融環境及精神健康空間</p>
-                            <p>高度客製化方案，結合沉浸式科技、多感官體驗與專業治療</p>
-                            <a href="pages/about.html" class="btn-primary">了解更多</a>
+                            <h2 data-lang="carousel.slide1.title">ZebraGo 流動精神健康及共融服務車</h2>
+                            <p data-lang="carousel.slide1.text1">服務學校及企業，建構共融環境及精神健康空間</p>
+                            <p data-lang="carousel.slide1.text2">高度客製化方案，結合沉浸式科技、多感官體驗與專業治療</p>
+                            <a href="pages/about.html" class="btn-primary" data-lang="carousel.slide1.button">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -88,10 +89,10 @@
                 <div class="carousel-slide" style="background-image: url('images/Mainpage/carousel/image2.jpg');">
                     <div class="carousel-content">
                         <div class="container">
-                            <h2>百變空間 高度客製化</h2>
-                            <p>車廂可變間隔設計，提供私密安靜的治療環境</p>
-                            <p>靈活配合不同機構需求，量身訂造專屬服務方案</p>
-                            <a href="pages/about.html" class="btn-primary">認識我們</a>
+                            <h2 data-lang="carousel.slide2.title">百變空間 高度客製化</h2>
+                            <p data-lang="carousel.slide2.text1">車廂可變間隔設計，提供私密安靜的治療環境</p>
+                            <p data-lang="carousel.slide2.text2">靈活配合不同機構需求，量身訂造專屬服務方案</p>
+                            <a href="pages/about.html" class="btn-primary" data-lang="carousel.slide2.button">認識我們</a>
                         </div>
                     </div>
                 </div>
@@ -100,10 +101,10 @@
                 <div class="carousel-slide" style="background-image: url('images/Mainpage/carousel/image3.jpg');">
                     <div class="carousel-content">
                         <div class="container">
-                            <h2>守護學校及企業團隊身心靈健康</h2>
-                            <p>為學校師生、企業員工及照顧者提供全方位支援</p>
-                            <p>高度客製化方案，以 ICE 手法打造沉浸式、協作式、體驗式服務</p>
-                            <a href="pages/contact.html" class="btn-primary">立即預約</a>
+                            <h2 data-lang="carousel.slide3.title">守護學校及企業團隊身心靈健康</h2>
+                            <p data-lang="carousel.slide3.text1">為學校師生、企業員工及照顧者提供全方位支援</p>
+                            <p data-lang="carousel.slide3.text2">高度客製化方案，以 ICE 手法打造沉浸式、協作式、體驗式服務</p>
+                            <a href="pages/contact.html" class="btn-primary" data-lang="carousel.slide3.button">立即預約</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +130,7 @@
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <h2 class="section-title">ZebraGo 流動服務車 為學校及企業提供專業精神健康及共融支援</h2>
+            <h2 class="section-title" data-lang="stats.title">ZebraGo 流動服務車 為學校及企業提供專業精神健康及共融支援</h2>
             
             <div class="stats-grid">
                 <!-- Stat 1 -->
@@ -137,7 +138,7 @@
                     <div class="stat-icon">
                         <img src="images/Mainpage/stats/school.png" alt="服務學校">
                     </div>
-                    <h3 class="stat-label">服務學校</h3>
+                    <h3 class="stat-label" data-lang="stats.schools">服務學校</h3>
                     <p class="stat-value">100+</p>
                 </div>
                 
@@ -146,7 +147,7 @@
                     <div class="stat-icon">
                         <img src="images/Mainpage/stats/group.png" alt="專業治療師">
                     </div>
-                    <h3 class="stat-label">累計受惠學生</h3>
+                    <h3 class="stat-label" data-lang="stats.students">累計受惠學生</h3>
                     <p class="stat-value">5,000+</p>
                 </div>
                 
@@ -155,7 +156,7 @@
                     <div class="stat-icon">
                         <img src="images/Mainpage/stats/help.png" alt="治療項目">
                     </div>
-                    <h3 class="stat-label">治療項目</h3>
+                    <h3 class="stat-label" data-lang="stats.treatments">治療項目</h3>
                     <p class="stat-value">20+</p>
                 </div>
                 
@@ -164,8 +165,8 @@
                     <div class="stat-icon">
                         <img src="images/Mainpage/stats/time-left.png" alt="受惠學生">
                     </div>
-                    <h3 class="stat-label">沉浸式體驗時數</h3>
-                    <p class="stat-value">800+ 小時</p>
+                    <h3 class="stat-label" data-lang="stats.hours">沉浸式體驗時數</h3>
+                    <p class="stat-value">800+ <span data-lang="stats.hoursUnit">小時</span></p>
                 </div>
             </div>
         </div>
@@ -174,7 +175,7 @@
     <!-- Partners Gallery Section -->
     <section class="partners-section">
         <div class="container">
-            <h2 class="section-title">合作夥伴</h2>
+            <h2 class="section-title" data-lang="section.partners">合作夥伴</h2>
         </div>
         
         <div class="partners-scroll-wrapper">
@@ -243,7 +244,7 @@
                     <div class="service-icon">
                         <img src="images/Mainpage/introduction/zebra1.png" alt="全方位 4R 精神健康系列">
                     </div>
-                    <h3 class="service-title">全方位 4R<br>精神健康系列</h3>
+                    <h3 class="service-title" data-lang-html="service.mentalHealth">全方位 4R<br>精神健康系列</h3>
                 </a>
                 
                 <!-- Service 2 -->
@@ -251,7 +252,7 @@
                     <div class="service-icon">
                         <img src="images/Mainpage/introduction/zebra2.png" alt="全方位共融系列">
                     </div>
-                    <h3 class="service-title">全方位<br>共融系列</h3>
+                    <h3 class="service-title" data-lang-html="service.inclusion">全方位<br>共融系列</h3>
                 </a>
                 
                 <!-- Service 3 -->
@@ -259,7 +260,7 @@
                     <div class="service-icon">
                         <img src="images/Mainpage/introduction/zebra3.png" alt="百變練功房">
                     </div>
-                    <h3 class="service-title">百變練功房<br>專業訓練系列</h3>
+                    <h3 class="service-title" data-lang-html="service.training">百變練功房<br>專業訓練系列</h3>
                 </a>
             </div>
         </div>
@@ -315,7 +316,7 @@
     <!-- Support Section -->
     <section class="support-section">
         <div class="container">
-            <h2 class="section-title">支持我們</h2>
+            <h2 class="section-title" data-lang="section.support">支持我們</h2>
             
             <div class="support-grid">
                 <!-- Support Item 1 -->
@@ -323,7 +324,7 @@
                     <div class="support-image">
                         <img src="images/Mainpage/support/donation.png" alt="愛心捐獻">
                     </div>
-                    <h3 class="support-label">愛心捐獻</h3>
+                    <h3 class="support-label" data-lang="support.donation">愛心捐獻</h3>
                 </a>
                 
                 <!-- Support Item 2 -->
@@ -331,7 +332,7 @@
                     <div class="support-image">
                         <img src="images/Mainpage/support/zebra.png" alt="周邊產品">
                     </div>
-                    <h3 class="support-label">周邊產品</h3>
+                    <h3 class="support-label" data-lang="support.products">周邊產品</h3>
                 </a>
                 
                 <!-- Support Item 3 -->
@@ -339,7 +340,7 @@
                     <div class="support-image">
                         <img src="images/Mainpage/support/join.png" alt="加入我們">
                     </div>
-                    <h3 class="support-label">加入我們</h3>
+                    <h3 class="support-label" data-lang="support.join">加入我們</h3>
                 </a>
             </div>
         </div>
@@ -352,18 +353,18 @@
                 <div class="footer-main">
                     <div class="footer-links">
                         <div class="footer-column">
-                            <a href="pages/privacy.html" class="footer-link">私隱聲明</a>
-                            <a href="pages/ip-protection.html" class="footer-link">保護知識產權</a>
+                            <a href="pages/privacy.html" class="footer-link" data-lang="footer.privacy">私隱聲明</a>
+                            <a href="pages/ip-protection.html" class="footer-link" data-lang="footer.ip">保護知識產權</a>
                         </div>
                         
                         <div class="footer-column">
-                            <a href="pages/disclaimer.html" class="footer-link">免責條款</a>
-                            <a href="pages/copyright.html" class="footer-link">版權聲明</a>
+                            <a href="pages/disclaimer.html" class="footer-link" data-lang="footer.disclaimer">免責條款</a>
+                            <a href="pages/copyright.html" class="footer-link" data-lang="footer.copyright">版權聲明</a>
                         </div>
                     </div>
                     
                     <div class="footer-contact">
-                        <a href="pages/contact.html" class="btn-contact-footer">聯絡我們</a>
+                        <a href="pages/contact.html" class="btn-contact-footer" data-lang="footer.contact">聯絡我們</a>
                     </div>
                 </div>
             </div>
@@ -376,6 +377,7 @@
         </div>
     </footer>
 
+    <script src="js/language.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
 </body>

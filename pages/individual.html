@@ -18,8 +18,9 @@
                     <button class="font-size-btn" data-size="large">A</button>
                 </div>
                 <div class="top-links">
-                    <a href="#" class="lang-switch">ENG</a>
-                    <a href="#" class="simple-chinese">简体中文</a>
+                    <a href="#" class="lang-switch" data-lang-switch="en">ENG</a>
+                    <a href="#" class="simple-chinese" data-lang-switch="zh-CN">简体中文</a>
+                    <a href="#" class="traditional-chinese" data-lang-switch="zh-HK" style="display: none;">繁體中文</a>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/tpbcss.zebrago" aria-label="Facebook" target="_blank"><img src="../images/Mainpage/banner/facebook.png" alt="Facebook"></a>
                         <a href="https://www.instagram.com/tpbcss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank"><img src="../images/Mainpage/banner/instagram.png" alt="Instagram"></a>
@@ -44,18 +45,18 @@
                 
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="about.html" data-lang="nav.about">關於我們</a></li>
                         <li class="dropdown">
-                            <a href="#services" class="dropdown-toggle">我們的服務 <span class="dropdown-arrow">▼</span></a>
+                            <a href="#services" class="dropdown-toggle" data-lang="nav.services">我們的服務 <span class="dropdown-arrow">▼</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="individual.html">個人服務</a></li>
-                                <li><a href="school.html">學校服務</a></li>
-                                <li><a href="corporate.html">企業服務</a></li>
+                                <li><a href="individual.html" data-lang="nav.individual">個人服務</a></li>
+                                <li><a href="school.html" data-lang="nav.school">學校服務</a></li>
+                                <li><a href="corporate.html" data-lang="nav.corporate">企業服務</a></li>
                             </ul>
                         </li>
-                        <li><a href="news.html">新聞發佈</a></li>
-                        <li><a href="support.html">支持我們</a></li>
-                        <li><a href="contact.html" class="btn-contact">查詢服務</a></li>
+                        <li><a href="news.html" data-lang="nav.news">新聞發佈</a></li>
+                        <li><a href="support.html" data-lang="nav.support">支持我們</a></li>
+                        <li><a href="contact.html" class="btn-contact" data-lang="nav.contact">查詢服務</a></li>
                     </ul>
                 </nav>
                 
@@ -87,18 +88,18 @@
                 <div class="footer-main">
                     <div class="footer-links">
                         <div class="footer-column">
-                            <a href="privacy.html" class="footer-link">私隱聲明</a>
-                            <a href="ip-protection.html" class="footer-link">保護知識產權</a>
+                            <a href="privacy.html" class="footer-link" data-lang="footer.privacy">私隱聲明</a>
+                            <a href="ip-protection.html" class="footer-link" data-lang="footer.ip">保護知識產權</a>
                         </div>
                         
                         <div class="footer-column">
-                            <a href="disclaimer.html" class="footer-link">免責條款</a>
-                            <a href="copyright.html" class="footer-link">版權聲明</a>
+                            <a href="disclaimer.html" class="footer-link" data-lang="footer.disclaimer">免責條款</a>
+                            <a href="copyright.html" class="footer-link" data-lang="footer.copyright">版權聲明</a>
                         </div>
                     </div>
                     
                     <div class="footer-contact">
-                        <a href="contact.html" class="btn-contact-footer">聯絡我們</a>
+                        <a href="contact.html" class="btn-contact-footer" data-lang="footer.contact">聯絡我們</a>
                     </div>
                 </div>
             </div>
@@ -111,6 +112,7 @@
         </div>
     </footer>
 
+    <script src="../js/language.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js"></script>
 </body>
