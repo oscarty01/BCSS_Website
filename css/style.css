@@ -1053,6 +1053,13 @@ img {
     }
 }
 
+@media (max-width: 900px) {
+    .news-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: flex;
