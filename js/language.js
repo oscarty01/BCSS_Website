@@ -60,6 +60,11 @@ const translations = {
         
         // News
         'news.title': 'ZebraGo 流動車：高度客製化的流動精神健康服務',
+        'news.intro': 'ZebraGo 是一輛專為學校及企業設計的流動服務車，可直接駛入校園或企業場所提供服務。車廂採用創新的可變間隔設計，能靈活分隔為兩個獨立訓練室，同時為不同使用者提供私密、安靜的治療環境。我們提供高度客製化的服務方案，可根據不同機構的需求量身訂造專屬計劃。',
+        'news.tech.title': '沉浸式科技配合專業治療',
+        'news.tech.content': '車內配備先進的沉浸式技術，結合多感官體驗、靜觀及表達藝術元素。我們的專業團隊包括語言治療師、職業治療師及遊戲治療師，為學校的學童提供語言治療、職業治療及遊戲治療等一對一或小組訓練，同時亦為企業員工提供壓力管理、團隊建設及心理健康支援服務。所有服務方案均可高度客製化，靈活配合不同機構的特定需求。',
+        'news.sdg.title': '回應可持續發展目標',
+        'news.sdg.content': 'ZebraGo 流動服務車致力回應聯合國可持續發展目標，透過流動服務模式推動共融教育及企業社會責任，為學校及企業提供可持續的精神健康支援方案。',
         'news.readMore': '查看更多',
         
         // Common
@@ -124,6 +129,11 @@ const translations = {
         
         // News
         'news.title': 'ZebraGo 流动车：高度客制化的流动精神健康服务',
+        'news.intro': 'ZebraGo 是一辆专为学校及企业设计的流动服务车，可直接驶入校园或企业场所提供服务。车厢采用创新的可变间隔设计，能灵活分隔为两个独立训练室，同时为不同使用者提供私密、安静的治疗环境。我们提供高度客制化的服务方案，可根据不同机构的需求量身订造专属计划。',
+        'news.tech.title': '沉浸式科技配合专业治疗',
+        'news.tech.content': '车内配备先进的沉浸式技术，结合多感官体验、静观及表达艺术元素。我们的专业团队包括语言治疗师、职业治疗师及游戏治疗师，为学校的学童提供语言治疗、职业治疗及游戏治疗等一对一或小组训练，同时亦为企业员工提供压力管理、团队建设及心理健康支援服务。所有服务方案均可高度客制化，灵活配合不同机构的特定需求。',
+        'news.sdg.title': '回应可持续发展目标',
+        'news.sdg.content': 'ZebraGo 流动服务车致力回应联合国可持续发展目标，透过流动服务模式推动共融教育及企业社会责任，为学校及企业提供可持续的精神健康支援方案。',
         'news.readMore': '查看更多',
         
         // Common
@@ -188,6 +198,11 @@ const translations = {
         
         // News
         'news.title': 'ZebraGo Mobile Vehicle: Highly Customized Mobile Mental Health Services',
+        'news.intro': 'ZebraGo is a mobile service vehicle designed for schools and enterprises, capable of directly entering campuses or corporate premises to provide services. The interior features an innovative variable partition design, allowing it to be flexibly divided into two independent training rooms, providing private and quiet therapeutic environments for different users. We offer highly customized service solutions, tailoring exclusive plans according to the specific needs of different organizations.',
+        'news.tech.title': 'Immersive Technology Combined with Professional Treatment',
+        'news.tech.content': 'The vehicle is equipped with advanced immersive technology, combining multi-sensory experiences, mindfulness, and expressive arts elements. Our professional team includes speech therapists, occupational therapists, and play therapists, providing one-on-one or group training such as speech therapy, occupational therapy, and play therapy for school children. Simultaneously, we offer stress management, team building, and mental health support services for corporate employees. All service solutions are highly customizable, flexibly adapting to the specific needs of different organizations.',
+        'news.sdg.title': 'Responding to Sustainable Development Goals',
+        'news.sdg.content': 'The ZebraGo mobile service vehicle is committed to responding to the United Nations Sustainable Development Goals, promoting inclusive education and corporate social responsibility through its mobile service model, and providing sustainable mental health support solutions for schools and enterprises.',
         'news.readMore': 'Read More',
         
         // Common
