@@ -1386,7 +1386,7 @@ img {
     }
     
     .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
     
@@ -1476,13 +1476,14 @@ img {
     }
     
     .sustainability-goals {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
     }
     
     .sdg-item {
-        max-width: 100%;
-        width: 100%;
+        max-width: 100px;
+        flex: 1;
     }
     
     /* Support Section Mobile */
@@ -1495,8 +1496,8 @@ img {
     }
     
     .support-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .support-image {
