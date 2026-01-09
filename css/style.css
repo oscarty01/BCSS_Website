@@ -259,12 +259,14 @@ img {
     position: relative;
 }
 
-.dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
+    .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        width: 100%;
+        justify-content: space-between;
+    }
 
 .dropdown-arrow {
     font-size: 10px;
@@ -1040,38 +1042,161 @@ img {
     .main-nav li {
         width: 100%;
         border-bottom: 1px solid #eee;
+        margin: 0;
+        padding: 0;
     }
     
     .main-nav a {
         display: block;
         padding: 15px 10px;
+        position: relative;
+    }
+    
+    /* Add spacing before the contact button - reduced gap, no border */
+    .main-nav li:last-child {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: none;
+    }
+    
+    /* Ensure the button link doesn't have underline overlap */
+    .main-nav .btn-contact {
+        margin-top: 0;
+    }
+    
+    /* Add small margin to the item before the button to prevent underline overlap */
+    .main-nav li:nth-last-child(2) {
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    
+    /* Keep underline - restore original behavior */
+    .main-nav a::after {
+        display: block;
+    }
+    
+    /* Adjust underline position for the item before button to prevent overlap with green button */
+    .main-nav li:nth-last-child(2) a::after {
+        bottom: 2px;
+    }
+    
+    .main-nav .dropdown {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav .dropdown > a {
+        margin: 0;
+        padding: 15px 10px;
+    }
+    
+    .main-nav .dropdown li {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav .dropdown.active {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .main-nav .dropdown.active .dropdown-menu {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    
+    .main-nav .dropdown.active + li {
+        border-top: 1px solid #eee;
+    }
+    
+    .main-nav .dropdown:not(.active) {
+        border-bottom: 1px solid #eee;
     }
     
     /* Dropdown mobile styles */
     .dropdown-menu {
-        position: static;
+        position: static !important;
         box-shadow: none;
         background: #f9f9f9;
-        margin: 0;
-        padding: 5px 8px;
+        margin: 0 !important;
+        padding: 0 !important;
         border-radius: 0;
-        max-height: 0;
+        max-height: 0 !important;
         overflow: hidden;
+        transition: max-height 0.3s ease;
+        display: block;
+        list-style: none;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: none !important;
     }
     
+    /* Disable hover effects in mobile - override desktop hover */
+    .dropdown:hover .dropdown-menu {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: none !important;
+    }
+    
+    /* Active state must override hover */
     .dropdown.active .dropdown-menu {
-        max-height: 200px;
-        opacity: 1;
-        visibility: visible;
+        max-height: 150px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .dropdown.active:hover .dropdown-menu {
+        max-height: 150px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .dropdown:hover .dropdown-arrow {
         transform: none;
-        padding: 5px 8px;
+    }
+    
+    .dropdown.active .dropdown-arrow {
+        transform: rotate(180deg) !important;
+    }
+    
+    .dropdown-menu li {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none;
     }
     
     .dropdown-menu a {
-        padding: 12px 20px 12px 30px;
+        padding: 10px 20px 10px 30px;
         font-size: 14px;
-        border-radius: 6px;
-        margin: 2px 0;
+        border-radius: 0;
+        margin: 0 !important;
+        display: block;
+    }
+    
+    .dropdown-menu li:last-child {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .dropdown-menu li:last-child a {
+        margin-bottom: 0 !important;
+        padding-bottom: 10px;
+    }
+    
+    .dropdown-menu li:first-child {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    
+    .dropdown-menu li:first-child a {
+        padding-top: 10px;
     }
     
     .dropdown-menu a:hover {
@@ -1190,7 +1315,7 @@ img {
     }
     
     .font-size-control {
-        order: 1;
+        display: none;
     }
     
     .top-links {
@@ -1348,10 +1473,17 @@ img {
     .footer-column {
         gap: 15px;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     
     .footer-link {
         font-size: 14px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
     }
     
     .footer-contact {

@@ -16,18 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', (e) => {
+            const dropdown = toggle.closest('.dropdown');
             // Only prevent default on mobile
             if (window.innerWidth <= 768) {
                 e.preventDefault();
-                const dropdown = toggle.closest('.dropdown');
-                dropdown.classList.toggle('active');
+                e.stopPropagation();
+                const isActive = dropdown.classList.contains('active');
                 
-                // Close other dropdowns
+                // Close all dropdowns first
                 document.querySelectorAll('.dropdown').forEach(other => {
                     if (other !== dropdown) {
                         other.classList.remove('active');
                     }
                 });
+                
+                // Toggle the clicked dropdown
+                if (isActive) {
+                    dropdown.classList.remove('active');
+                } else {
+                    dropdown.classList.add('active');
+                }
             }
         });
     });
@@ -48,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.main-nav a');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            // Don't close if it's the dropdown toggle itself
-            if (!link.classList.contains('dropdown-toggle')) {
+            // Don't close if it's the dropdown toggle itself or a dropdown menu item
+            if (!link.classList.contains('dropdown-toggle') && !link.closest('.dropdown-menu')) {
                 mainNav?.classList.remove('active');
                 mobileMenuToggle?.classList.remove('active');
             }
