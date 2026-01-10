@@ -2570,6 +2570,11 @@ main {
 @media (max-width: 768px) {
     /* Phone-specific styles - mobile menu is already active from 1024px breakpoint */
     
+    /* Hide font-size control on tablets and phones */
+    .font-size-control {
+        display: none;
+    }
+    
     /* About page title banner - mobile */
     .about-title-banner {
         height: 180px;
@@ -3193,10 +3198,6 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
-    }
-    
-    .font-size-control {
-        display: none;
     }
     
     .top-links {
