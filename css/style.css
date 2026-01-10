@@ -1027,7 +1027,7 @@ img {
 
 .about-vision-mission-section .section-subtitle {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     color: var(--text-light);
     margin-bottom: 40px;
     font-style: italic;
@@ -1068,7 +1068,7 @@ img {
 }
 
 .vm-heading {
-    font-size: 26px;
+    font-size: 32px;
     color: var(--primary-green);
     font-weight: 700;
     margin-bottom: 5px;
@@ -1145,7 +1145,7 @@ img {
 }
 
 .mission-title {
-    font-size: 20px;
+    font-size: 24px;
     color: var(--text-dark);
     font-weight: 600;
     margin-bottom: 3px;
@@ -1213,7 +1213,7 @@ img {
 }
 
 .value-title {
-    font-size: 18px;
+    font-size: 22px;
     color: var(--primary-green);
     font-weight: 600;
     margin-bottom: 3px;
@@ -2200,7 +2200,7 @@ main {
     }
 
     .about-vision-mission-section .section-subtitle {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 35px;
     }
 
@@ -2232,7 +2232,7 @@ main {
     }
 
     .vm-heading {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .vm-heading-en {
@@ -2249,7 +2249,7 @@ main {
     }
 
     .mission-title {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .mission-title-en {
@@ -2273,7 +2273,7 @@ main {
     }
 
     .value-title {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .value-title-en {
@@ -2576,7 +2576,7 @@ main {
     }
 
     .about-vision-mission-section .section-subtitle {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 25px;
     }
 
@@ -2612,7 +2612,7 @@ main {
     }
 
     .vm-heading {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .vm-heading-en {
@@ -2654,7 +2654,7 @@ main {
     }
 
     .mission-title {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .mission-title-en {
@@ -2689,7 +2689,7 @@ main {
     }
 
     .value-title {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .value-title-en {
@@ -3254,7 +3254,7 @@ main {
     }
 
     .about-vision-mission-section .section-subtitle {
-        font-size: 13px;
+        font-size: 16px;
         margin-bottom: 22px;
     }
 
@@ -3268,7 +3268,7 @@ main {
     }
 
     .vm-heading {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .vm-heading-en {
@@ -3307,7 +3307,7 @@ main {
     }
 
     .mission-title {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .mission-title-en {
@@ -3336,7 +3336,7 @@ main {
     }
 
     .value-title {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .value-title-en {
