@@ -18,6 +18,9 @@ const translations = {
         
         // Contact page
         'contact.title': '查詢服務',
+        'contact.office.title': '總辦事處',
+        'contact.address': '香港新界大埔南坑塘雅路松嶺村',
+        'contact.showMap': '顯示詳細地圖',
 
         // Carousel
         'carousel.slide1.title': 'ZebraGo 流動精神健康及共融服務車',
@@ -243,6 +246,9 @@ const translations = {
         
         // Contact page
         'contact.title': '查询服务',
+        'contact.office.title': '总办事处',
+        'contact.address': '香港新界大埔南坑塘雅路松岭村',
+        'contact.showMap': '显示详细地图',
 
         // Carousel
         'carousel.slide1.title': 'ZebraGo 流动精神健康及共融服务车',
@@ -468,6 +474,9 @@ const translations = {
         
         // Contact page
         'contact.title': 'Inquiry Service',
+        'contact.office.title': 'Head Office',
+        'contact.address': 'Chung Ling Tsuen, Nam Hang Tong Nga Road, Tai Po, New Territories, Hong Kong',
+        'contact.showMap': 'Show Detailed Map',
 
         // Carousel
         'carousel.slide1.title': 'ZebraGo Mobile Mental Health and Inclusion Service Vehicle',
