@@ -103,8 +103,20 @@
             <div class="container">
                 <p class="about-video-caption">全港首部電動共融體驗車，結合沉浸式科技與專業治療，為學校與企業提供全方位精神健康解決方案</p>
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BNKotaFUeMo?si=ng8oqXhG3qg-FGIK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video width="100%" controls id="about-video">
+                        <source src="../videos/zebrago-intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
+                <script>
+                    // Set default volume to 30%
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const video = document.getElementById('about-video');
+                        if (video) {
+                            video.volume = 0.3;
+                        }
+                    });
+                </script>
             </div>
         </section>
         
@@ -174,7 +186,7 @@
                             <img src="../images/About/zebra.jpg" alt="斑馬象徵" class="zebra-image">
                         </div>
                         <p class="zebra-description">
-                            在非洲文化中，斑馬條紋常被視為平衡與和諧的象徵。斑馬的優點是群體合作、適應能力強以及好奇心旺盛，這些特質幫助牠們在自然界中生存並展現韌性與智慧。
+                            在非洲文化中，斑馬條紋常被視為平衡與和諧的象徵。斑馬的優點是群體合作、適應能力強以及好奇心旺盛，這些特質幫助牠們在自然界中生存並展現韌性與智慧。「斑馬綫 ZebraGo」以此為靈感，作為全港首個結合流動車概念與沉浸式科技 (ICE) 的身心靈支援平台。為學校及企業提供專業、創新且具溫度的全方位支援。
                         </p>
                     </div>
                 </div>

@@ -1572,7 +1572,8 @@ img {
     color: #B8860B;
 }
 
-.video-container iframe {
+.video-container iframe,
+.video-container video {
     position: absolute;
     top: 0;
     left: 0;
