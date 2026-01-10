@@ -1002,10 +1002,241 @@ img {
 }
 
 /* ===========================
+   About Page - Vision & Mission Section
+   =========================== */
+.about-vision-mission-section {
+    padding: 50px 0 30px;
+    background: #ffffff;
+}
+
+.container-wide {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-vision-mission-section .section-title {
+    text-align: center;
+    font-size: 34px;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.about-vision-mission-section .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Grid Layout for Desktop */
+.vm-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.vm-left-column,
+.vm-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.vm-block {
+    background: #f8f9fa;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vm-mission-block {
+    justify-content: space-between;
+}
+
+.vm-vision-block,
+.vm-values-block {
+    flex: 1;
+}
+
+.vm-heading {
+    font-size: 26px;
+    color: var(--primary-green);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.vm-heading-en {
+    font-size: 16px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.vm-content {
+    margin-top: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vm-highlight {
+    font-size: 18px;
+    color: var(--text-dark);
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 18px;
+    background: linear-gradient(to right, rgba(45, 156, 219, 0.1), rgba(45, 156, 219, 0.05));
+    border-left: 4px solid var(--primary-green);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.vm-description {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+/* Mission Items */
+.mission-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.mission-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.mission-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.mission-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.mission-content {
+    flex: 1;
+}
+
+.mission-title {
+    font-size: 20px;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.mission-title-en {
+    font-size: 14px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.mission-description {
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+.mission-subsection {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.mission-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.mission-subsection strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* Core Values Grid */
+.core-values-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    flex: 1;
+    align-content: center;
+}
+
+.core-value-item {
+    text-align: center;
+    padding: 20px 15px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.core-value-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(45, 156, 219, 0.15);
+    border-color: var(--primary-green);
+}
+
+.value-icon {
+    margin-bottom: 12px;
+}
+
+.value-emoji {
+    font-size: 40px;
+    display: block;
+}
+
+.value-title {
+    font-size: 18px;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.value-title-en {
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.value-description {
+    font-size: 14px;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* ===========================
    About Page - Video Section
    =========================== */
 .about-video-section {
-    padding: 50px 0 30px;
+    padding: 35px 0 30px;
     background: #ffffff;
 }
 
@@ -1099,12 +1330,17 @@ img {
 
 .about-video-caption {
     text-align: center;
-    font-size: 18px;
-    color: var(--text-dark);
+    font-size: 22px;
+    color: var(--primary-green);
     line-height: 1.8;
-    margin: 0 auto 30px;
-    max-width: 900px;
-    font-weight: 400;
+    margin: 0 auto 35px;
+    max-width: 1200px;
+    font-weight: 700;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, rgba(45, 156, 219, 0.08), rgba(45, 156, 219, 0.03));
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-green);
+    box-shadow: 0 2px 15px rgba(45, 156, 219, 0.1);
 }
 
 .video-container {
@@ -1944,20 +2180,121 @@ main {
     .about-title-banner {
         height: 200px;
     }
-    
+
     .about-title {
         font-size: 32px;
     }
-    
+
+    /* About page vision & mission section - tablet */
+    .about-vision-mission-section {
+        padding: 45px 0 30px;
+    }
+
+    .container-wide {
+        max-width: 1300px;
+        padding: 0 30px;
+    }
+
+    .about-vision-mission-section .section-title {
+        font-size: 28px;
+    }
+
+    .about-vision-mission-section .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .vm-grid-layout {
+        gap: 25px;
+    }
+
+    .vm-left-column,
+    .vm-right-column {
+        gap: 22px;
+    }
+
+    .vm-block {
+        padding: 30px;
+    }
+
+    .mission-items {
+        gap: 25px;
+    }
+
+    .mission-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mission-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .vm-heading {
+        font-size: 24px;
+    }
+
+    .vm-heading-en {
+        font-size: 15px;
+    }
+
+    .vm-highlight {
+        font-size: 17px;
+        padding: 16px;
+    }
+
+    .vm-description {
+        font-size: 15px;
+    }
+
+    .mission-title {
+        font-size: 18px;
+    }
+
+    .mission-title-en {
+        font-size: 13px;
+    }
+
+    .mission-description {
+        font-size: 14px;
+    }
+
+    .core-values-grid {
+        gap: 15px;
+    }
+
+    .core-value-item {
+        padding: 18px 14px;
+    }
+
+    .value-emoji {
+        font-size: 36px;
+    }
+
+    .value-title {
+        font-size: 16px;
+    }
+
+    .value-title-en {
+        font-size: 12px;
+    }
+
+    .value-description {
+        font-size: 13px;
+    }
+
     /* About page video section - tablet */
     .about-video-section {
-        padding: 40px 0 25px;
+        padding: 30px 0 25px;
     }
-    
+
     .about-video-caption {
-        font-size: 16px;
-        margin-bottom: 25px;
-        padding: 0 20px;
+        font-size: 19px;
+        margin-bottom: 30px;
+        padding: 20px 25px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .video-container {
@@ -2219,21 +2556,162 @@ main {
     .about-title-banner {
         height: 180px;
     }
-    
+
     .about-title {
         font-size: 26px;
     }
-    
+
+    /* About page vision & mission section - mobile */
+    .about-vision-mission-section {
+        padding: 35px 0 25px;
+    }
+
+    .container-wide {
+        padding: 0 20px;
+    }
+
+    .about-vision-mission-section .section-title {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .about-vision-mission-section .section-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* Stack vertically: Vision -> Mission -> Core Values */
+    .vm-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .vm-left-column {
+        display: contents; /* Remove the column wrapper */
+    }
+
+    .vm-right-column {
+        display: contents; /* Remove the column wrapper */
+    }
+
+    .vm-vision-block {
+        order: 1;
+    }
+
+    .vm-mission-block {
+        order: 2;
+    }
+
+    .vm-values-block {
+        order: 3;
+    }
+
+    .vm-block {
+        padding: 22px 18px;
+        background: #f8f9fa;
+    }
+
+    .vm-heading {
+        font-size: 20px;
+    }
+
+    .vm-heading-en {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .vm-highlight {
+        font-size: 15px;
+        padding: 14px;
+        line-height: 1.6;
+    }
+
+    .vm-description {
+        font-size: 14px;
+    }
+
+    .mission-items {
+        gap: 20px;
+        margin-top: 18px;
+        justify-content: flex-start;
+    }
+
+    .mission-item {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .mission-icon {
+        width: 45px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .mission-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mission-title {
+        font-size: 17px;
+    }
+
+    .mission-title-en {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .mission-description {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .mission-subsection {
+        text-align: left;
+    }
+
+    .core-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 18px;
+        align-content: start;
+    }
+
+    .core-value-item {
+        padding: 18px 12px;
+        background: white;
+        border: 1px solid #e0e0e0;
+    }
+
+    .value-emoji {
+        font-size: 34px;
+    }
+
+    .value-title {
+        font-size: 16px;
+    }
+
+    .value-title-en {
+        font-size: 11px;
+    }
+
+    .value-description {
+        font-size: 12px;
+    }
+
     /* About page video section - mobile */
     .about-video-section {
-        padding: 30px 0 20px;
+        padding: 25px 0 20px;
     }
-    
+
     .about-video-caption {
-        font-size: 15px;
-        margin-bottom: 20px;
-        padding: 0 15px;
+        font-size: 17px;
+        margin-bottom: 25px;
+        padding: 18px 20px;
         line-height: 1.7;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     
     .video-container {
@@ -2756,21 +3234,131 @@ main {
     .about-title-banner {
         height: 150px;
     }
-    
+
     .about-title {
         font-size: 22px;
     }
-    
+
+    /* About page vision & mission section - small mobile */
+    .about-vision-mission-section {
+        padding: 28px 0 20px;
+    }
+
+    .container-wide {
+        padding: 0 15px;
+    }
+
+    .about-vision-mission-section .section-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .about-vision-mission-section .section-subtitle {
+        font-size: 13px;
+        margin-bottom: 22px;
+    }
+
+    .vm-grid-layout {
+        gap: 18px;
+    }
+
+    .vm-block {
+        padding: 18px 14px;
+        background: #f8f9fa;
+    }
+
+    .vm-heading {
+        font-size: 18px;
+    }
+
+    .vm-heading-en {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .vm-highlight {
+        font-size: 14px;
+        padding: 12px;
+        line-height: 1.5;
+    }
+
+    .vm-description {
+        font-size: 13px;
+    }
+
+    .mission-items {
+        gap: 18px;
+        margin-top: 16px;
+        justify-content: flex-start;
+    }
+
+    .mission-item {
+        gap: 10px;
+    }
+
+    .mission-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .mission-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mission-title {
+        font-size: 16px;
+    }
+
+    .mission-title-en {
+        font-size: 12px;
+    }
+
+    .mission-description {
+        font-size: 13px;
+    }
+
+    .core-values-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 16px;
+        align-content: start;
+    }
+
+    .core-value-item {
+        padding: 16px 12px;
+        background: white;
+        border: 1px solid #e0e0e0;
+    }
+
+    .value-emoji {
+        font-size: 32px;
+    }
+
+    .value-title {
+        font-size: 16px;
+    }
+
+    .value-title-en {
+        font-size: 12px;
+    }
+
+    .value-description {
+        font-size: 13px;
+    }
+
     /* About page video section - small mobile */
     .about-video-section {
-        padding: 25px 0 15px;
+        padding: 22px 0 15px;
     }
-    
+
     .about-video-caption {
-        font-size: 14px;
-        margin-bottom: 20px;
-        padding: 0 10px;
+        font-size: 15px;
+        margin-bottom: 22px;
+        padding: 16px 18px;
         line-height: 1.6;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     .video-container {
