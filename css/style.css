@@ -3891,8 +3891,10 @@ main {
 .contact-icon {
     width: 24px;
     height: 24px;
-    color: var(--primary-green);
     flex-shrink: 0;
+    object-fit: contain;
+    /* Filter to convert icons to primary green color */
+    filter: brightness(0) saturate(100%) invert(53%) sepia(98%) saturate(456%) hue-rotate(163deg) brightness(91%) contrast(87%);
 }
 
 .contact-text {

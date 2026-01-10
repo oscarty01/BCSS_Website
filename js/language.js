@@ -19,7 +19,7 @@ const translations = {
         // Contact page
         'contact.title': '查詢服務',
         'contact.office.title': '總辦事處',
-        'contact.address': '香港新界大埔南坑塘雅路松嶺村',
+        'contact.address': '大埔富亨邨亨昌樓地下',
         'contact.showMap': '顯示詳細地圖',
 
         // Carousel
@@ -247,7 +247,7 @@ const translations = {
         // Contact page
         'contact.title': '查询服务',
         'contact.office.title': '总办事处',
-        'contact.address': '香港新界大埔南坑塘雅路松岭村',
+        'contact.address': '大埔富亨邨亨昌楼地下',
         'contact.showMap': '显示详细地图',
 
         // Carousel
@@ -475,7 +475,7 @@ const translations = {
         // Contact page
         'contact.title': 'Inquiry Service',
         'contact.office.title': 'Head Office',
-        'contact.address': 'Chung Ling Tsuen, Nam Hang Tong Nga Road, Tai Po, New Territories, Hong Kong',
+        'contact.address': 'G/F, Hang Cheong House, Fu Heng Estate, Tai Po',
         'contact.showMap': 'Show Detailed Map',
 
         // Carousel
