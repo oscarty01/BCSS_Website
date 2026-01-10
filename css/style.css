@@ -263,16 +263,20 @@ img {
     padding: 10px 20px !important;
     border-radius: 25px;
     font-weight: 600;
+    text-decoration: none !important;
 }
 
 .btn-contact::after {
-    display: none;
+    display: none !important;
 }
 
-.btn-contact:hover {
+.btn-contact:hover,
+.btn-contact:active,
+.btn-contact:focus {
     background: var(--dark-green);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(45, 156, 219, 0.3);
+    text-decoration: none !important;
 }
 
 /* Dropdown Menu */
