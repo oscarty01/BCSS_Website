@@ -1125,6 +1125,7 @@ img {
 .about-core-values-section {
     padding: 50px 0 70px;
     background: #ffffff;
+    scroll-margin-top: 160px;
 }
 
 .about-core-values-section .section-title {
