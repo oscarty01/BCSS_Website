@@ -16,6 +16,9 @@ const translations = {
         'nav.specialProjects': '特別項目',
         'nav.contact': '查詢服務',
         
+        // Contact page
+        'contact.title': '查詢服務',
+
         // Carousel
         'carousel.slide1.title': 'ZebraGo 流動精神健康及共融服務車',
         'carousel.slide1.text1': '服務學校及企業，建構共融環境及精神健康空間',
@@ -238,6 +241,9 @@ const translations = {
         'nav.specialProjects': '特别项目',
         'nav.contact': '查询服务',
         
+        // Contact page
+        'contact.title': '查询服务',
+
         // Carousel
         'carousel.slide1.title': 'ZebraGo 流动精神健康及共融服务车',
         'carousel.slide1.text1': '服务学校及企业，建构共融环境及精神健康空间',
@@ -460,6 +466,9 @@ const translations = {
         'nav.specialProjects': 'Special Projects',
         'nav.contact': 'Inquiry Service',
         
+        // Contact page
+        'contact.title': 'Inquiry Service',
+
         // Carousel
         'carousel.slide1.title': 'ZebraGo Mobile Mental Health and Inclusion Service Vehicle',
         'carousel.slide1.text1': 'Serving schools and enterprises, building inclusive environments and mental health spaces',
