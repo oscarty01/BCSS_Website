@@ -2575,6 +2575,15 @@ main {
         display: none;
     }
     
+    /* Center align top-bar content when zoom buttons are hidden */
+    .top-bar .container {
+        justify-content: center;
+    }
+    
+    .top-links {
+        justify-content: center;
+    }
+    
     /* About page title banner - mobile */
     .about-title-banner {
         height: 180px;
