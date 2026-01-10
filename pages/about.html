@@ -98,6 +98,28 @@
             </div>
         </section>
         
+        <!-- Video Section -->
+        <section class="about-video-section">
+            <div class="container">
+                <p class="about-video-caption">全港首部電動共融體驗車，結合沉浸式科技與專業治療，為學校與企業提供全方位精神健康解決方案</p>
+                <div class="video-container">
+                    <video width="100%" controls id="about-video" poster="../images/About/start-frame.png">
+                        <source src="../videos/zebrago-intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <script>
+                    // Set default volume to 30%
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const video = document.getElementById('about-video');
+                        if (video) {
+                            video.volume = 0.3;
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+        
         <!-- Vision & Mission Section -->
         <section class="about-vision-mission-section">
             <div class="container-wide">
@@ -230,28 +252,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Video Section -->
-        <section class="about-video-section">
-            <div class="container">
-                <p class="about-video-caption">全港首部電動共融體驗車，結合沉浸式科技與專業治療，為學校與企業提供全方位精神健康解決方案</p>
-                <div class="video-container">
-                    <video width="100%" controls id="about-video">
-                        <source src="../videos/zebrago-intro.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <script>
-                    // Set default volume to 30%
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const video = document.getElementById('about-video');
-                        if (video) {
-                            video.volume = 0.3;
-                        }
-                    });
-                </script>
             </div>
         </section>
         

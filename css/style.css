@@ -1005,7 +1005,7 @@ img {
    About Page - Vision & Mission Section
    =========================== */
 .about-vision-mission-section {
-    padding: 50px 0 30px;
+    padding: 25px 0 50px;
     background: #ffffff;
 }
 
@@ -1236,7 +1236,7 @@ img {
    About Page - Video Section
    =========================== */
 .about-video-section {
-    padding: 35px 0 30px;
+    padding: 50px 0 20px;
     background: #ffffff;
 }
 
@@ -2187,7 +2187,7 @@ main {
 
     /* About page vision & mission section - tablet */
     .about-vision-mission-section {
-        padding: 45px 0 30px;
+        padding: 22px 0 40px;
     }
 
     .container-wide {
@@ -2286,7 +2286,7 @@ main {
 
     /* About page video section - tablet */
     .about-video-section {
-        padding: 30px 0 25px;
+        padding: 40px 0 18px;
     }
 
     .about-video-caption {
@@ -2563,7 +2563,7 @@ main {
 
     /* About page vision & mission section - mobile */
     .about-vision-mission-section {
-        padding: 35px 0 25px;
+        padding: 20px 0 35px;
     }
 
     .container-wide {
@@ -2702,7 +2702,7 @@ main {
 
     /* About page video section - mobile */
     .about-video-section {
-        padding: 25px 0 20px;
+        padding: 35px 0 15px;
     }
 
     .about-video-caption {
@@ -3241,7 +3241,7 @@ main {
 
     /* About page vision & mission section - small mobile */
     .about-vision-mission-section {
-        padding: 28px 0 20px;
+        padding: 18px 0 30px;
     }
 
     .container-wide {
@@ -3319,7 +3319,7 @@ main {
     }
 
     .core-values-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         margin-top: 16px;
         align-content: start;
@@ -3349,7 +3349,7 @@ main {
 
     /* About page video section - small mobile */
     .about-video-section {
-        padding: 22px 0 15px;
+        padding: 30px 0 12px;
     }
 
     .about-video-caption {
