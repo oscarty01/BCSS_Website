@@ -1219,6 +1219,56 @@ img {
     font-style: italic;
 }
 
+/* Zebra Symbolism */
+.zebra-symbolism {
+    max-width: 1100px;
+    margin: 25px auto 35px;
+    text-align: center;
+}
+
+.zebra-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.zebra-image-container {
+    max-width: 1000px;
+    height: 300px;
+    margin: 0 auto 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.zebra-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.zebra-description {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, rgba(45, 156, 219, 0.08), rgba(30, 111, 168, 0.08));
+    border-left: 5px solid var(--primary-green);
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+}
+
+.ice-description {
+    margin-top: 20px;
+}
+
 /* ICE Grid */
 .ice-grid {
     display: grid;
@@ -1828,6 +1878,31 @@ main {
         line-height: 1.3;
     }
     
+    /* Zebra Symbolism - tablet */
+    .zebra-symbolism {
+        margin: 20px auto 30px;
+        padding: 0 20px;
+    }
+    
+    .zebra-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .zebra-image-container {
+        max-width: 100%;
+        height: 250px;
+        margin: 0 auto 12px;
+        border-radius: 12px;
+    }
+    
+    .zebra-description {
+        font-size: 16px;
+        line-height: 1.9;
+        padding: 25px 30px;
+        max-width: 100%;
+    }
+    
     .ice-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -2013,6 +2088,36 @@ main {
     .sdg-subtitle {
         font-size: 10px;
         line-height: 1.3;
+    }
+    
+    /* Zebra Symbolism - mobile */
+    .zebra-symbolism {
+        margin: 15px auto 25px;
+        padding: 0 15px;
+    }
+    
+    .zebra-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .zebra-image-container {
+        max-width: 100%;
+        height: 200px;
+        margin: 0 auto 10px;
+        border-radius: 10px;
+    }
+    
+    .zebra-description {
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 20px 20px;
+        max-width: 100%;
+        border-left-width: 4px;
+    }
+    
+    .ice-description {
+        margin-top: 15px;
     }
     
     .ice-grid {
@@ -2432,6 +2537,36 @@ main {
     .sdg-subtitle {
         font-size: 9px;
         line-height: 1.2;
+    }
+    
+    /* Zebra Symbolism - small mobile */
+    .zebra-symbolism {
+        margin: 15px auto 20px;
+        padding: 0 10px;
+    }
+    
+    .zebra-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .zebra-image-container {
+        max-width: 100%;
+        height: 180px;
+        margin: 0 auto 10px;
+        border-radius: 8px;
+    }
+    
+    .zebra-description {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 18px 15px;
+        max-width: 100%;
+        border-left-width: 3px;
+    }
+    
+    .ice-description {
+        margin-top: 12px;
     }
     
     .ice-grid {
