@@ -3,6 +3,23 @@
 
 const translations = {
     'zh-HK': {
+        // Page Titles (for browser tab)
+        'pageTitle.home': '斑馬線ZebraGo',
+        'pageTitle.about': '關於我們 - 斑馬線ZebraGo',
+        'pageTitle.contact': '查詢服務 - 斑馬線ZebraGo',
+        'pageTitle.news': '新聞發佈 - 斑馬線ZebraGo',
+        'pageTitle.support': '支持我們 - 斑馬線ZebraGo',
+        'pageTitle.products': '周邊產品 - 斑馬線ZebraGo',
+        'pageTitle.specialProjects': '特別項目 - 斑馬線ZebraGo',
+        'pageTitle.individual': '個人服務 - 斑馬線ZebraGo',
+        'pageTitle.school': '學校服務 - 斑馬線ZebraGo',
+        'pageTitle.corporate': '企業服務 - 斑馬線ZebraGo',
+        'pageTitle.privacy': '私隱聲明 - 斑馬線ZebraGo',
+        'pageTitle.disclaimer': '免責條款 - 斑馬線ZebraGo',
+        'pageTitle.copyright': '版權聲明 - 斑馬線ZebraGo',
+        'pageTitle.ipProtection': '保護知識產權 - 斑馬線ZebraGo',
+        'pageTitle.donation': '愛心捐獻 - 斑馬線ZebraGo',
+
         // Navigation
         'nav.about': '關於我們',
         'nav.services': '我們的服務',
@@ -231,6 +248,23 @@ const translations = {
         'about.services.training.teamDesc': '服務由顧問團隊支持，包括特殊教育與輔導學系教授、資深教育心理學家、註冊職業治療師及高級言語治療師。'
     },
     'zh-CN': {
+        // Page Titles (for browser tab)
+        'pageTitle.home': '斑马线ZebraGo',
+        'pageTitle.about': '关于我们 - 斑马线ZebraGo',
+        'pageTitle.contact': '查询服务 - 斑马线ZebraGo',
+        'pageTitle.news': '新闻发布 - 斑马线ZebraGo',
+        'pageTitle.support': '支持我们 - 斑马线ZebraGo',
+        'pageTitle.products': '周边产品 - 斑马线ZebraGo',
+        'pageTitle.specialProjects': '特别项目 - 斑马线ZebraGo',
+        'pageTitle.individual': '个人服务 - 斑马线ZebraGo',
+        'pageTitle.school': '学校服务 - 斑马线ZebraGo',
+        'pageTitle.corporate': '企业服务 - 斑马线ZebraGo',
+        'pageTitle.privacy': '隐私声明 - 斑马线ZebraGo',
+        'pageTitle.disclaimer': '免责条款 - 斑马线ZebraGo',
+        'pageTitle.copyright': '版权声明 - 斑马线ZebraGo',
+        'pageTitle.ipProtection': '保护知识产权 - 斑马线ZebraGo',
+        'pageTitle.donation': '爱心捐献 - 斑马线ZebraGo',
+
         // Navigation
         'nav.about': '关于我们',
         'nav.services': '我们的服务',
@@ -459,6 +493,23 @@ const translations = {
         'about.services.training.teamDesc': '服务由顾问团队支持，包括特殊教育与辅导学系教授、资深教育心理学家、注册职业治疗师及高级言语治疗师。'
     },
     'en': {
+        // Page Titles (for browser tab)
+        'pageTitle.home': 'ZebraGo',
+        'pageTitle.about': 'About Us - ZebraGo',
+        'pageTitle.contact': 'Inquiry Service - ZebraGo',
+        'pageTitle.news': 'News - ZebraGo',
+        'pageTitle.support': 'Support Us - ZebraGo',
+        'pageTitle.products': 'Merchandise - ZebraGo',
+        'pageTitle.specialProjects': 'Special Projects - ZebraGo',
+        'pageTitle.individual': 'Individual Services - ZebraGo',
+        'pageTitle.school': 'School Services - ZebraGo',
+        'pageTitle.corporate': 'Corporate Services - ZebraGo',
+        'pageTitle.privacy': 'Privacy Statement - ZebraGo',
+        'pageTitle.disclaimer': 'Disclaimer - ZebraGo',
+        'pageTitle.copyright': 'Copyright Statement - ZebraGo',
+        'pageTitle.ipProtection': 'Intellectual Property Protection - ZebraGo',
+        'pageTitle.donation': 'Donations - ZebraGo',
+
         // Navigation
         'nav.about': 'About Us',
         'nav.services': 'Our Services',
@@ -736,10 +787,10 @@ class LanguageSwitcher {
         // Update HTML lang attribute
         document.documentElement.lang = lang;
         
-        // Update page title if it has a data-lang-title attribute
-        const titleElement = document.querySelector('[data-lang-title]');
-        if (titleElement) {
-            document.title = titleElement.getAttribute(`data-lang-title-${lang}`) || document.title;
+        // Update page title based on data-page-title attribute on body
+        const pageTitleKey = document.body.getAttribute('data-page-title');
+        if (pageTitleKey && translations[lang] && translations[lang][pageTitleKey]) {
+            document.title = translations[lang][pageTitleKey];
         }
         
         // Translate all elements with data-lang attribute
