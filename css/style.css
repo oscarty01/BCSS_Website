@@ -158,17 +158,21 @@ img {
     gap: 12px;
 }
 
-.social-icons a {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
-    padding: 5px;
-}
+    .social-icons a {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+        padding: 4px;
+    }
+    
+    .social-icons {
+        gap: 10px;
+    }
 
 .social-icons a:hover {
     background: var(--white);
@@ -1935,6 +1939,22 @@ main {
 /* ===========================
    Responsive Design
    =========================== */
+@media (max-width: 1150px) {
+    /* Compact navigation for smaller desktops/large tablets */
+    .main-nav ul {
+        gap: 18px;
+    }
+    
+    .main-nav a {
+        font-size: 14px;
+    }
+    
+    .btn-contact {
+        padding: 9px 18px !important;
+        font-size: 14px !important;
+    }
+}
+
 @media (max-width: 1024px) {
     /* Tablet/iPad - Switch to mobile menu */
     :root {
@@ -1946,7 +1966,7 @@ main {
     }
     
     .top-bar .container {
-        gap: 20px;
+        gap: 15px;
         padding: 8px 15px;
     }
     
@@ -1959,20 +1979,32 @@ main {
         font-size: 13px;
     }
     
+    .top-links {
+        gap: 15px;
+    }
+    
     .lang-switch, .simple-chinese, .traditional-chinese {
         padding: 5px 10px;
         font-size: 13px;
+    }
+    
+    .social-icons {
+        gap: 10px;
     }
     
     .main-header {
         padding: 12px 0;
     }
     
-    .logo-container {
+    .logo {
         gap: 12px;
     }
     
-    .logo img {
+    .logo-zebrago {
+        height: 55px;
+    }
+    
+    .logo-bscc {
         height: 50px;
     }
     
@@ -2012,9 +2044,9 @@ main {
     
     .main-nav a {
         display: block;
-        padding: 15px 10px;
+        padding: 15px 8px;
         position: relative;
-        font-size: 14px;
+        font-size: 13px;
     }
     
     /* Add spacing before the contact button - reduced gap, no border */
@@ -2026,8 +2058,10 @@ main {
     }
     
     /* Dropdown styles for mobile/tablet */
-    .main-nav .btn-contact {
+    .main-nav     .main-nav .btn-contact {
         margin-top: 0;
+        padding: 8px 14px !important;
+        font-size: 13px;
     }
     
     .main-nav li:nth-last-child(2) {
@@ -2134,7 +2168,7 @@ main {
     
     .dropdown-menu a {
         padding: 10px 20px 10px 30px;
-        font-size: 14px;
+        font-size: 13px;
         border-radius: 0;
         margin: 0 !important;
         display: block;
