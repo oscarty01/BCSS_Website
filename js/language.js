@@ -97,6 +97,19 @@ const translations = {
         'button.learnMore': '了解更多',
         'button.contact': '聯絡我們',
         
+        // Products Page
+        'products.title': '周邊產品',
+        'products.intro1': '斑馬象徵合作、適應力與好奇心——這些力量同樣適用於校園、家庭、社區，以至企業團隊。ZebraGo 透過沉浸式與多感官體驗，推動共融、同理與身心健康。',
+        'products.intro2': '你選購的每一件商品，都是對共融與精神健康推廣的一份支持。',
+        'products.item1.name': '多功能斑馬晴雨傘',
+        'products.item1.price': 'HK$ 100',
+        'products.item1.description': '一把可晴可雨的斑馬晴雨傘，採用特潤傘面與加厚傘布設計，遇水成珠不易滲透；同時具防 UV 功能，晴天外出也能安心遮擋。傘骨結實耐用，不易反傘，日常通勤與外出都實用可靠。',
+        'products.item2.name': '輕奢毛毯手挽袋',
+        'products.item2.price': 'HK$ 150',
+        'products.item2.description': '輕奢毛毯手挽袋以柔軟親膚的毛毯感材質打造，外形時尚亮麗，同時兼具耐用度，日常攜帶更安心。無論上班、聚會或外出，它都能陪你出席不同場合，為每個精彩時刻增添質感。',
+        'products.addToCart': '立即購買',
+        'products.comingSoon': '更多商品即將推出，敬請期待！',
+        
         // About Page
         'about.title': '關於我們',
         'about.videoCaption': '全港首部電動共融體驗車，結合沉浸式科技與專業治療，為學校與企業提供全方位精神健康解決方案',
@@ -342,6 +355,19 @@ const translations = {
         'button.learnMore': '了解更多',
         'button.contact': '联络我们',
         
+        // Products Page
+        'products.title': '周边产品',
+        'products.intro1': '斑马象征合作、适应力与好奇心——这些力量同样适用于校园、家庭、社区，以至企业团队。ZebraGo 透过沉浸式与多感官体验，推动共融、同理与身心健康。',
+        'products.intro2': '你选购的每一件商品，都是对共融与精神健康推广的一份支持。',
+        'products.item1.name': '多功能斑马晴雨伞',
+        'products.item1.price': 'HK$ 100',
+        'products.item1.description': '一把可晴可雨的斑马晴雨伞，采用特润伞面与加厚伞布设计，遇水成珠不易渗透；同时具防 UV 功能，晴天外出也能安心遮挡。伞骨结实耐用，不易反伞，日常通勤与外出都实用可靠。',
+        'products.item2.name': '轻奢毛毯手挽袋',
+        'products.item2.price': 'HK$ 150',
+        'products.item2.description': '轻奢毛毯手挽袋以柔软亲肤的毛毯感材质打造，外形时尚亮丽，同时兼具耐用度，日常携带更安心。无论上班、聚会或外出，它都能陪你出席不同场合，为每个精彩时刻增添质感。',
+        'products.addToCart': '立即购买',
+        'products.comingSoon': '更多商品即将推出，敬请期待！',
+        
         // About Page
         'about.title': '关于我们',
         'about.videoCaption': '全港首部电动共融体验车，结合沉浸式科技与专业治疗，为学校与企业提供全方位精神健康解决方案',
@@ -586,6 +612,19 @@ const translations = {
         // Common
         'button.learnMore': 'Learn More',
         'button.contact': 'Contact Us',
+        
+        // Products Page
+        'products.title': 'Merchandise',
+        'products.intro1': 'Zebras symbolize cooperation, adaptability, and curiosity—these strengths apply equally to schools, families, communities, and even corporate teams. ZebraGo promotes inclusion, empathy, and mental well-being through immersive and multi-sensory experiences.',
+        'products.intro2': 'Every item you purchase is a form of support for the promotion of inclusion and mental health.',
+        'products.item1.name': 'Multi-Functional Zebra Umbrella',
+        'products.item1.price': 'HK$ 100',
+        'products.item1.description': 'A versatile zebra umbrella suitable for both sunny and rainy days, featuring a specially treated umbrella surface and thickened fabric design that forms water beads and resists penetration. Equipped with UV protection, it provides safe coverage on sunny days. The sturdy frame is durable and resistant to inversion, making it practical and reliable for daily commuting and outings.',
+        'products.item2.name': 'Luxury Blanket Tote Bag',
+        'products.item2.price': 'HK$ 150',
+        'products.item2.description': 'The luxury blanket tote bag is crafted from soft, skin-friendly blanket-like material with a stylish and elegant appearance, while maintaining durability for worry-free daily carrying. Whether for work, gatherings, or outings, it accompanies you to various occasions, adding quality to every wonderful moment.',
+        'products.addToCart': 'Buy Now',
+        'products.comingSoon': 'More merchandise coming soon, stay tuned!',
         
         // About Page
         'about.title': 'About Us',

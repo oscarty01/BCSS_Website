@@ -168,3 +168,141 @@ function revealOnScroll() {
 }
 
 window.addEventListener('scroll', revealOnScroll);
+
+// Product Image Carousel Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const productImageWrappers = document.querySelectorAll('.product-image-wrapper');
+    
+    productImageWrappers.forEach(wrapper => {
+        const productId = wrapper.dataset.product;
+        const images = wrapper.querySelectorAll('.product-image');
+        const dots = document.querySelectorAll(`.product-image-dots[data-product="${productId}"] .product-image-dot`);
+        let currentIndex = 0;
+        
+        if (images.length <= 1) {
+            // Hide dots if only one image
+            const dotsContainer = document.querySelector(`.product-image-dots[data-product="${productId}"]`);
+            if (dotsContainer) {
+                dotsContainer.style.display = 'none';
+            }
+            return;
+        }
+        
+        // Function to update carousel position
+        const updateCarousel = (index) => {
+            wrapper.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        };
+        
+        // Add click handlers to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel(currentIndex);
+            });
+        });
+        
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        wrapper.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        wrapper.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        const handleSwipe = () => {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next image
+                    currentIndex = (currentIndex + 1) % images.length;
+                } else {
+                    // Swipe right - previous image
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                }
+                updateCarousel(currentIndex);
+            }
+        };
+        
+        // Mouse drag support for desktop
+        let isDragging = false;
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let dragCurrentX = 0;
+        
+        wrapper.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            dragStartX = e.clientX;
+            dragStartY = e.clientY;
+            dragCurrentX = dragStartX;
+            wrapper.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+        
+        wrapper.addEventListener('mouseleave', (e) => {
+            if (isDragging) {
+                handleDragEnd();
+            }
+            wrapper.style.cursor = 'grab';
+        });
+        
+        wrapper.addEventListener('mouseup', (e) => {
+            if (isDragging) {
+                handleDragEnd();
+            }
+        });
+        
+        wrapper.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            dragCurrentX = e.clientX;
+        });
+        
+        const handleDragEnd = () => {
+            if (!isDragging) return;
+            
+            const dragDistance = dragStartX - dragCurrentX;
+            const dragThreshold = 50;
+            
+            if (Math.abs(dragDistance) > dragThreshold) {
+                if (dragDistance > 0) {
+                    // Dragged left - next image
+                    currentIndex = (currentIndex + 1) % images.length;
+                } else {
+                    // Dragged right - previous image
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                }
+                updateCarousel(currentIndex);
+            }
+            
+            isDragging = false;
+            wrapper.style.cursor = 'grab';
+        };
+        
+        // Prevent image drag
+        images.forEach(img => {
+            img.addEventListener('dragstart', (e) => {
+                e.preventDefault();
+                return false;
+            });
+        });
+        
+        // Set cursor style
+        wrapper.style.cursor = 'grab';
+    });
+});
