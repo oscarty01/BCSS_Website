@@ -15,6 +15,12 @@
     --text-light: #666;
     --white: #ffffff;
     --header-height: 140px;
+    /* Common transitions and effects */
+    --transition-base: all 0.3s ease;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 15px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.15);
+    --shadow-primary: 0 4px 12px rgba(45, 156, 219, 0.3);
 }
 
 html {
@@ -48,7 +54,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 ul {
@@ -106,7 +112,7 @@ img {
     color: var(--white);
     cursor: pointer;
     padding: 2px 5px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     font-weight: 500;
 }
 
@@ -141,7 +147,7 @@ img {
 .lang-switch, .simple-chinese, .traditional-chinese {
     padding: 5px 10px;
     border-radius: 3px;
-    transition: background 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .lang-switch:hover, .simple-chinese:hover, .traditional-chinese:hover {
@@ -155,24 +161,20 @@ img {
 
 .social-icons {
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
 
-    .social-icons a {
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.2);
-        transition: all 0.3s ease;
-        padding: 4px;
-    }
-    
-    .social-icons {
-        gap: 10px;
-    }
+.social-icons a {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    transition: var(--transition-base);
+    padding: 4px;
+}
 
 .social-icons a:hover {
     background: var(--white);
@@ -212,7 +214,7 @@ img {
 .logo-link {
     display: flex;
     align-items: center;
-    transition: opacity 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .logo-link:hover {
@@ -254,7 +256,7 @@ img {
     width: 0;
     height: 2px;
     background: var(--primary-green);
-    transition: width 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .main-nav a:hover::after {
@@ -299,7 +301,7 @@ img {
 
 .dropdown-arrow {
     font-size: 12px;
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
     margin-left: 5px;
     display: inline-block;
     color: var(--text-dark);
@@ -317,11 +319,11 @@ img {
     min-width: 140px;
     padding: 0;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow-primary);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     z-index: 100;
     margin-top: 8px;
     display: block !important;
@@ -355,7 +357,7 @@ img {
     padding: 18px 20px;
     color: var(--text-dark);
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     white-space: nowrap;
     border-radius: 0;
     margin: 0 !important;
@@ -399,7 +401,7 @@ img {
     width: 25px;
     height: 3px;
     background: var(--primary-green);
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 /* ===========================
@@ -498,8 +500,8 @@ img {
     font-size: 18px;
     font-weight: 600;
     margin-top: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
@@ -525,7 +527,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     z-index: 10;
 }
 
@@ -561,7 +563,7 @@ img {
     background: rgba(255,255,255,0.5);
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .indicator:hover {
@@ -603,7 +605,7 @@ img {
 .stat-item {
     text-align: center;
     padding: 30px 20px;
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .stat-item:hover {
@@ -614,7 +616,7 @@ img {
     width: 100px;
     height: 100px;
     margin: 0 auto 25px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .stat-item:hover .stat-icon {
@@ -626,7 +628,7 @@ img {
     height: 100%;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .stat-label {
@@ -710,13 +712,13 @@ img {
     background: var(--white);
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
 }
 
 .partner-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow-lg);
 }
 
 .partner-item img {
@@ -724,7 +726,7 @@ img {
     max-height: 100%;
     object-fit: contain;
     opacity: 0.8;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .partner-item:hover img {
@@ -755,7 +757,7 @@ img {
     border-radius: 16px;
     padding: 50px 15px 20px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -763,7 +765,7 @@ img {
     justify-content: flex-end;
     min-height: 140px;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    box-shadow: var(--shadow-md);
     position: relative;
     overflow: visible;
 }
@@ -789,7 +791,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     position: absolute;
     top: -40px;
     left: 50%;
@@ -836,7 +838,7 @@ img {
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-md);
     align-self: stretch;
     display: flex;
     align-items: center;
@@ -870,13 +872,13 @@ img {
     max-width: 120px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
 }
 
 .sdg-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow-lg);
 }
 
 .sdg-item img {
@@ -917,14 +919,14 @@ img {
     font-size: 16px;
     font-weight: 600;
     margin-top: 20px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     text-decoration: none;
 }
 
 .btn-read-more:hover {
     background: var(--dark-green);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 /* ===========================
@@ -950,7 +952,7 @@ img {
 .support-item {
     text-align: center;
     text-decoration: none;
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
     display: block;
 }
 
@@ -964,8 +966,8 @@ img {
     margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
     background: var(--white);
     padding: 20px;
     display: flex;
@@ -983,7 +985,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .support-item:hover .support-image img {
@@ -995,7 +997,7 @@ img {
     color: var(--text-dark);
     font-weight: 600;
     margin: 0;
-    transition: color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .support-item:hover .support-label {
@@ -1086,15 +1088,15 @@ img {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
     display: flex;
     flex-direction: column;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Product Image Section */
@@ -1147,7 +1149,7 @@ img {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     border: none;
     padding: 0;
 }
@@ -1226,7 +1228,7 @@ img {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     margin-top: auto;
     display: block;
     text-align: center;
@@ -1284,8 +1286,8 @@ img {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -1293,7 +1295,7 @@ img {
 
 .news-card-link:hover .news-card {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-lg);
 }
 
 .news-image-container {
@@ -1361,15 +1363,15 @@ img {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
     display: flex;
     flex-direction: column;
 }
 
 .special-event-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-lg);
 }
 
 .event-poster-container {
@@ -1382,7 +1384,7 @@ img {
     display: block;
     width: 100%;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
     border: none;
     outline: none;
     text-decoration: none;
@@ -1438,7 +1440,7 @@ img {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -1447,7 +1449,7 @@ img {
 .event-apply-btn:hover {
     background: var(--dark-green);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 .event-apply-btn:active {
@@ -1662,7 +1664,7 @@ img {
     padding: 20px 15px;
     background: white;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     border: 1px solid #e0e0e0;
 }
 
@@ -1746,7 +1748,7 @@ img {
 
 .organization-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-lg);
     text-decoration: none;
     color: inherit;
 }
@@ -1890,8 +1892,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
     overflow: hidden;
     padding: 10px;
     background: #f9f9f9;
@@ -1905,7 +1907,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .sdg-item:hover .sdg-icon {
@@ -2000,7 +2002,7 @@ img {
     border-radius: 12px;
     padding: 30px 20px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .ice-item:hover {
@@ -2018,7 +2020,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .ice-item:hover .ice-icon {
@@ -2029,7 +2031,7 @@ img {
     font-size: 40px;
     font-weight: 700;
     color: var(--white);
-    transition: color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .ice-item:hover .ice-letter {
@@ -2041,7 +2043,7 @@ img {
     font-weight: 700;
     color: var(--primary-green);
     margin-bottom: 8px;
-    transition: color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .ice-item:hover .ice-title {
@@ -2051,7 +2053,7 @@ img {
 .ice-subtitle {
     font-size: 16px;
     color: var(--text-light);
-    transition: color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .ice-item:hover .ice-subtitle {
@@ -2071,8 +2073,8 @@ img {
     background: var(--light-green);
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
 }
 
 .consultant-card:hover {
@@ -2135,8 +2137,8 @@ img {
     border-radius: 15px;
     padding: 40px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
     scroll-margin-top: 160px;
 }
 
@@ -2166,7 +2168,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
     background: #f9f9f9 !important;
     padding: 0;
     overflow: hidden;
@@ -2231,7 +2233,7 @@ img {
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .activity-item:hover {
@@ -2336,7 +2338,7 @@ main {
     color: var(--white);
     font-size: 14px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     opacity: 0.95;
     white-space: nowrap;
 }
@@ -2359,9 +2361,9 @@ main {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
 }
 
 .btn-contact-footer:hover {
@@ -2514,7 +2516,7 @@ main {
     }
     
     /* Dropdown styles for mobile/tablet */
-    .main-nav     .main-nav .btn-contact {
+    .main-nav .btn-contact {
         margin-top: 0;
         padding: 8px 14px !important;
         font-size: 13px;
@@ -4617,7 +4619,7 @@ main {
 .contact-link {
     color: var(--text-dark);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .contact-link:hover {
@@ -4635,7 +4637,7 @@ main {
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-base);
     font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
 }
 
@@ -4643,7 +4645,7 @@ main {
     background: var(--primary-green);
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 .contact-map-wrapper {
@@ -4651,7 +4653,7 @@ main {
     height: 450px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
 }
 
 .contact-map {
