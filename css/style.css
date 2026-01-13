@@ -1258,6 +1258,136 @@ img {
 }
 
 /* ===========================
+   Special Projects Page - Events Section
+   =========================== */
+.special-events-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.special-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.special-event-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event-poster-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.event-poster-link {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.event-poster-link:hover {
+    transform: scale(1.02);
+}
+
+.event-poster-link:focus {
+    outline: none;
+    border: none;
+}
+
+.event-poster-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border: none;
+    outline: none;
+}
+
+.event-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+    text-align: center;
+}
+
+.event-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-apply-btn {
+    background: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.event-apply-btn:hover {
+    background: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+}
+
+.event-apply-btn:active {
+    transform: translateY(0);
+}
+
+/* ===========================
+   Special Projects - Coming Soon Section
+   =========================== */
+.special-projects-coming-soon-section {
+    padding: 40px 0 60px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.special-projects-coming-soon-text {
+    font-size: 20px;
+    color: var(--text-light);
+    font-style: italic;
+    margin: 0;
+}
+
+/* ===========================
    About Page - Vision & Mission Section
    =========================== */
 .about-vision-mission-section {
@@ -2608,6 +2738,45 @@ main {
         padding: 0 30px;
     }
 
+    /* Special events section - tablet */
+    .special-events-section {
+        padding: 50px 0;
+    }
+
+    .special-events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 30px;
+        max-width: 800px;
+    }
+
+    .event-info {
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .event-title {
+        font-size: 22px;
+    }
+
+    .event-actions {
+        width: 100%;
+    }
+
+    .event-apply-btn {
+        padding: 12px 35px;
+        font-size: 17px;
+    }
+
+    /* Special projects coming soon section - tablet */
+    .special-projects-coming-soon-section {
+        padding: 35px 0 50px 0;
+    }
+
+    .special-projects-coming-soon-text {
+        font-size: 18px;
+    }
+
     .product-name {
         font-size: 22px;
     }
@@ -3093,6 +3262,46 @@ main {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 0 20px;
+    }
+
+    /* Special events section - mobile */
+    .special-events-section {
+        padding: 40px 0;
+    }
+
+    .special-events-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .event-info {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .event-title {
+        font-size: 20px;
+    }
+
+    .event-actions {
+        width: 100%;
+    }
+
+    .event-apply-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* Special projects coming soon section - mobile */
+    .special-projects-coming-soon-section {
+        padding: 30px 0 40px 0;
+    }
+
+    .special-projects-coming-soon-text {
+        font-size: 16px;
     }
 
     .product-name {

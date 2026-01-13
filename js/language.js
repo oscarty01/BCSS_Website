@@ -110,6 +110,13 @@ const translations = {
         'products.addToCart': '立即購買',
         'products.comingSoon': '更多商品即將推出，敬請期待！',
         
+        // Special Projects Page
+        'specialProjects.title': '特別項目',
+        'specialProjects.event1.title': '斑馬繪畫比賽',
+        'specialProjects.event2.title': '校園共融大使',
+        'specialProjects.apply': '立即報名',
+        'specialProjects.comingSoon': '更多項目即將推出，敬請期待！',
+        
         // About Page
         'about.title': '關於我們',
         'about.videoCaption': '全港首部電動共融體驗車，結合沉浸式科技與專業治療，為學校與企業提供全方位精神健康解決方案',
@@ -368,6 +375,13 @@ const translations = {
         'products.addToCart': '立即购买',
         'products.comingSoon': '更多商品即将推出，敬请期待！',
         
+        // Special Projects Page
+        'specialProjects.title': '特别项目',
+        'specialProjects.event1.title': '斑马绘画比赛',
+        'specialProjects.event2.title': '校园共融大使',
+        'specialProjects.apply': '立即报名',
+        'specialProjects.comingSoon': '更多项目即将推出，敬请期待！',
+        
         // About Page
         'about.title': '关于我们',
         'about.videoCaption': '全港首部电动共融体验车，结合沉浸式科技与专业治疗，为学校与企业提供全方位精神健康解决方案',
@@ -625,6 +639,13 @@ const translations = {
         'products.item2.description': 'The luxury blanket tote bag is crafted from soft, skin-friendly blanket-like material with a stylish and elegant appearance, while maintaining durability for worry-free daily carrying. Whether for work, gatherings, or outings, it accompanies you to various occasions, adding quality to every wonderful moment.',
         'products.addToCart': 'Buy Now',
         'products.comingSoon': 'More merchandise coming soon, stay tuned!',
+        
+        // Special Projects Page
+        'specialProjects.title': 'Special Projects',
+        'specialProjects.event1.title': 'Zebra Drawing Competition',
+        'specialProjects.event2.title': 'Campus Inclusion Ambassador',
+        'specialProjects.apply': 'Apply Now',
+        'specialProjects.comingSoon': 'More projects coming soon, stay tuned!',
         
         // About Page
         'about.title': 'About Us',

@@ -305,4 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set cursor style
         wrapper.style.cursor = 'grab';
     });
+    
+    // Special Events - PDF opening on poster click (already handled by href, but keeping for consistency)
+    // The links already have href pointing to PDFs, so they work without JavaScript
+    // This is just for any additional functionality if needed in the future
 });
