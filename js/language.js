@@ -112,6 +112,7 @@ const translations = {
         
         // Special Projects Page
         'specialProjects.title': '特別項目',
+        'specialProjects.intro': '探索「特別項目」，了解最新活動、招募與限定企劃，把握參與機會！',
         'specialProjects.event1.title': '斑馬繪畫比賽',
         'specialProjects.event2.title': '校園共融大使',
         'specialProjects.apply': '立即報名',
@@ -377,6 +378,7 @@ const translations = {
         
         // Special Projects Page
         'specialProjects.title': '特别项目',
+        'specialProjects.intro': '探索「特别项目」，了解最新活动、招募与限定企划，把握参与机会！',
         'specialProjects.event1.title': '斑马绘画比赛',
         'specialProjects.event2.title': '校园共融大使',
         'specialProjects.apply': '立即报名',
@@ -642,6 +644,7 @@ const translations = {
         
         // Special Projects Page
         'specialProjects.title': 'Special Projects',
+        'specialProjects.intro': 'Explore "Special Projects" to learn about the latest activities, recruitment opportunities, and limited initiatives. Seize the opportunity to participate!',
         'specialProjects.event1.title': 'Zebra Drawing Competition',
         'specialProjects.event2.title': 'Campus Inclusion Ambassador',
         'specialProjects.apply': 'Apply Now',
