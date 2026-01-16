@@ -4603,6 +4603,21 @@ main {
     z-index: 2;
 }
 
+/* Adjust padding for mobile English text */
+@media (max-width: 768px) {
+    html[lang="en"] .individual-hero-content,
+    body[lang="en"] .individual-hero-content {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html[lang="en"] .individual-hero-content,
+    body[lang="en"] .individual-hero-content {
+        padding: 15px 10px;
+    }
+}
+
 .individual-hero-page-title {
     font-size: 48px;
     font-weight: 700;
@@ -4620,6 +4635,16 @@ main {
     margin-bottom: 25px;
     line-height: 1.3;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjust for longer English text */
+html[lang="en"] .individual-hero-title,
+body[lang="en"] .individual-hero-title {
+    font-size: 36px;
+    line-height: 1.4;
 }
 
 .individual-hero-subtitle {
@@ -4629,6 +4654,13 @@ main {
     max-width: 800px;
     margin: 0 auto;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust for longer English text */
+html[lang="en"] .individual-hero-subtitle,
+body[lang="en"] .individual-hero-subtitle {
+    max-width: 1000px;
+    font-size: 20px;
 }
 
 /* Why Choose Section */
@@ -4708,6 +4740,19 @@ main {
     margin: 0;
 }
 
+.why-benefit-description p {
+    margin-bottom: 12px;
+}
+
+.why-benefit-description p:last-child {
+    margin-bottom: 0;
+}
+
+.why-benefit-description strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
 /* Training Areas Section */
 .individual-training-section {
     padding: 45px 0;
@@ -4720,6 +4765,11 @@ main {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.training-areas-grid.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
 }
 
 .training-area-card {
@@ -4799,10 +4849,30 @@ main {
     margin: 0 auto;
 }
 
+.service-formats-grid.four-columns {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+}
+
+.service-formats-grid.four-columns .service-format-card {
+    padding: 35px 20px;
+}
+
+/* Adjust for longer English text in 4-column layout */
+[lang="en"] .service-formats-grid.four-columns .service-format-card {
+    padding: 30px 15px;
+}
+
+[lang="en"] .service-formats-grid.four-columns {
+    gap: 15px;
+    max-width: 1500px;
+}
+
 .service-format-card {
     background: linear-gradient(135deg, rgba(45, 156, 219, 0.08), rgba(30, 111, 168, 0.05));
     border-radius: 16px;
-    padding: 40px;
+    padding: 35px 25px;
     display: flex;
     gap: 25px;
     align-items: flex-start;
@@ -4815,6 +4885,16 @@ main {
     border-color: var(--primary-green);
     box-shadow: var(--shadow-md);
     background: linear-gradient(135deg, rgba(45, 156, 219, 0.12), rgba(30, 111, 168, 0.08));
+}
+
+/* When number is inside content, use vertical layout */
+.service-format-card .service-format-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 0;
 }
 
 .service-format-number {
@@ -4830,6 +4910,12 @@ main {
     font-weight: 700;
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+    margin-bottom: 20px;
+}
+
+/* For old layout where number is separate */
+.service-format-card > .service-format-number {
+    margin-bottom: 0;
 }
 
 .service-format-content {
@@ -4837,11 +4923,22 @@ main {
 }
 
 .service-format-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 15px;
     line-height: 1.4;
+}
+
+/* Adjust for longer English text */
+[lang="en"] .service-format-title {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/* When in vertical layout, center align title */
+.service-format-card .service-format-content .service-format-title {
+    margin-top: 0;
 }
 
 .service-format-title-en {
@@ -4852,10 +4949,16 @@ main {
 }
 
 .service-format-description {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-light);
     line-height: 1.7;
     margin: 0;
+}
+
+/* Adjust for longer English text */
+[lang="en"] .service-format-description {
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 /* Support Section */
@@ -4971,6 +5074,99 @@ main {
     min-height: 400px;
 }
 
+/* School Mental Health Stack Layout */
+.school-mental-health-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.school-mental-health-item {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 35px;
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.school-mental-health-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    background: var(--light-green);
+}
+
+.school-mental-health-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(45, 156, 219, 0.1);
+}
+
+.school-mental-health-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition-base);
+}
+
+.school-mental-health-item:hover .school-mental-health-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 15px rgba(45, 156, 219, 0.4);
+}
+
+.school-mental-health-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.school-mental-health-title-wrapper {
+    flex: 1;
+}
+
+.school-mental-health-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.school-mental-health-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin: 0;
+}
+
+.school-mental-health-description {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.school-mental-health-description p {
+    margin-bottom: 15px;
+}
+
+.school-mental-health-description p:last-child {
+    margin-bottom: 0;
+}
+
+.school-mental-health-description strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
 /* CTA Section */
 .individual-cta-section {
     padding: 60px 0;
@@ -5005,6 +5201,13 @@ main {
         height: 300px;
     }
     
+    /* Increase height for English text on tablet */
+    html[lang="en"] .individual-hero-section,
+    body[lang="en"] .individual-hero-section {
+        height: 360px;
+        min-height: 360px;
+    }
+    
     .individual-hero-page-title {
         font-size: 40px;
     }
@@ -5013,8 +5216,22 @@ main {
         font-size: 36px;
     }
     
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-title,
+    body[lang="en"] .individual-hero-title {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    
     .individual-hero-subtitle {
         font-size: 20px;
+    }
+    
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-subtitle,
+    body[lang="en"] .individual-hero-subtitle {
+        font-size: 18px;
+        line-height: 1.8;
     }
     
     .why-benefits-grid {
@@ -5032,6 +5249,49 @@ main {
         gap: 30px;
     }
     
+    .service-formats-grid.four-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .training-areas-grid.two-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .school-mental-health-item {
+        padding: 25px 20px;
+    }
+    
+    .school-mental-health-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .school-mental-health-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    
+    .school-mental-health-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .school-mental-health-title {
+        font-size: 20px;
+    }
+    
+    .school-mental-health-subtitle {
+        font-size: 15px;
+    }
+    
+    .school-mental-health-description {
+        font-size: 14px;
+    }
+    
     .individual-support-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -5040,11 +5300,50 @@ main {
     .individual-support-image {
         min-height: 300px;
     }
+    
+    .school-mental-health-item {
+        padding: 30px;
+    }
+    
+    .school-mental-health-header {
+        gap: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .school-mental-health-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .school-mental-health-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .school-mental-health-title {
+        font-size: 22px;
+    }
+    
+    .school-mental-health-subtitle {
+        font-size: 16px;
+    }
+    
+    .school-mental-health-description {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
     .individual-hero-section {
         height: 280px;
+    }
+    
+    /* Increase height for English text */
+    html[lang="en"] .individual-hero-section,
+    body[lang="en"] .individual-hero-section {
+        height: 380px;
+        min-height: 380px;
     }
     
     .individual-hero-page-title {
@@ -5055,10 +5354,26 @@ main {
     .individual-hero-title {
         font-size: 28px;
         margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-title,
+    body[lang="en"] .individual-hero-title {
+        font-size: 24px;
+        line-height: 1.5;
     }
     
     .individual-hero-subtitle {
         font-size: 18px;
+        line-height: 1.7;
+    }
+    
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-subtitle,
+    body[lang="en"] .individual-hero-subtitle {
+        font-size: 16px;
+        line-height: 1.8;
     }
     
     .individual-why-section,
@@ -5120,14 +5435,20 @@ main {
     
     .service-format-card {
         padding: 30px 20px;
-        flex-direction: column;
-        text-align: center;
+    }
+    
+    .service-format-card .service-format-content {
+        gap: 15px;
     }
     
     .service-format-number {
         width: 60px;
         height: 60px;
         font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .service-format-card > .service-format-number {
         margin: 0 auto;
     }
     
@@ -5185,6 +5506,13 @@ main {
         height: 240px;
     }
     
+    /* Increase height for English text on small mobile */
+    html[lang="en"] .individual-hero-section,
+    body[lang="en"] .individual-hero-section {
+        height: 420px;
+        min-height: 420px;
+    }
+    
     .individual-hero-page-title {
         font-size: 28px;
         margin-bottom: 12px;
@@ -5193,10 +5521,27 @@ main {
     .individual-hero-title {
         font-size: 24px;
         margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-title,
+    body[lang="en"] .individual-hero-title {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 12px;
     }
     
     .individual-hero-subtitle {
         font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    /* Adjust for English */
+    html[lang="en"] .individual-hero-subtitle,
+    body[lang="en"] .individual-hero-subtitle {
+        font-size: 14px;
+        line-height: 1.8;
     }
     
     .section-title {
