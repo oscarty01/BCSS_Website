@@ -4568,6 +4568,610 @@ main {
 }
 
 /* ===========================
+   Individual Services Page Styles
+   =========================== */
+.individual-hero-section {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.individual-hero-page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
+}
+
+.individual-hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 25px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.individual-hero-subtitle {
+    font-size: 22px;
+    color: var(--white);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Why Choose Section */
+.individual-why-section {
+    padding: 45px 0;
+    background: var(--white);
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.why-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.why-benefit-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.why-benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    background: var(--light-green);
+}
+
+.why-benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: var(--transition-base);
+}
+
+.why-benefit-card:hover .why-benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 15px rgba(45, 156, 219, 0.4);
+}
+
+.why-benefit-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.why-benefit-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.why-benefit-description {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Training Areas Section */
+.individual-training-section {
+    padding: 45px 0;
+    background: #f8f9fa;
+}
+
+.training-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.training-area-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.training-area-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.training-area-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.training-area-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-base);
+}
+
+.training-area-card:hover .training-area-image img {
+    transform: scale(1.1);
+}
+
+.training-area-content {
+    padding: 30px 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.training-area-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.training-area-title-en {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-green);
+    font-style: italic;
+}
+
+.training-area-description {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+    flex: 1;
+}
+
+/* Service Formats Section */
+.individual-formats-section {
+    padding: 45px 0;
+    background: var(--white);
+}
+
+.service-formats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-format-card {
+    background: linear-gradient(135deg, rgba(45, 156, 219, 0.08), rgba(30, 111, 168, 0.05));
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.service-format-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-green);
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(135deg, rgba(45, 156, 219, 0.12), rgba(30, 111, 168, 0.08));
+}
+
+.service-format-number {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-green);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.3);
+}
+
+.service-format-content {
+    flex: 1;
+}
+
+.service-format-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.service-format-title-en {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-green);
+    font-style: italic;
+}
+
+.service-format-description {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Support Section */
+.individual-support-section {
+    padding: 45px 0;
+    background: #f8f9fa;
+}
+
+.individual-support-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.individual-support-content {
+    flex: 1;
+}
+
+.individual-support-intro {
+    font-size: 18px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.individual-support-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.individual-support-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.individual-support-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    background: var(--light-green);
+}
+
+.individual-support-item-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-shrink: 0;
+    transition: var(--transition-base);
+}
+
+.individual-support-item:hover .individual-support-item-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 12px rgba(45, 156, 219, 0.4);
+}
+
+.individual-support-item-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.individual-support-item-text {
+    flex: 1;
+}
+
+.individual-support-item-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.individual-support-item-description {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.individual-support-image-wrapper {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+}
+
+.individual-support-image-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.individual-support-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 400px;
+}
+
+/* Responsive Design for Individual Page */
+@media (max-width: 1024px) {
+    .individual-hero-section {
+        height: 300px;
+    }
+    
+    .individual-hero-page-title {
+        font-size: 40px;
+    }
+    
+    .individual-hero-title {
+        font-size: 36px;
+    }
+    
+    .individual-hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .why-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .training-areas-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .service-formats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .individual-support-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .individual-support-image {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .individual-hero-section {
+        height: 280px;
+    }
+    
+    .individual-hero-page-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .individual-hero-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .individual-hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .individual-why-section,
+    .individual-training-section,
+    .individual-formats-section,
+    .individual-support-section {
+        padding: 35px 0;
+    }
+    
+    .section-intro {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .why-benefit-card {
+        padding: 30px 20px;
+    }
+    
+    .why-benefit-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .why-benefit-icon img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+    
+    .why-benefit-title {
+        font-size: 20px;
+    }
+    
+    .why-benefit-description {
+        font-size: 15px;
+    }
+    
+    .training-area-image {
+        height: 200px;
+    }
+    
+    .training-area-content {
+        padding: 25px 20px;
+    }
+    
+    .training-area-title {
+        font-size: 20px;
+    }
+    
+    .training-area-title-en {
+        font-size: 14px;
+    }
+    
+    .training-area-description {
+        font-size: 14px;
+    }
+    
+    .service-format-card {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .service-format-number {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        margin: 0 auto;
+    }
+    
+    .service-format-title {
+        font-size: 20px;
+    }
+    
+    .service-format-title-en {
+        font-size: 14px;
+    }
+    
+    .service-format-description {
+        font-size: 15px;
+    }
+    
+    .individual-support-intro {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .individual-support-item {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .individual-support-item-icon {
+        margin: 0 auto;
+    }
+    
+    .individual-support-item-title {
+        font-size: 18px;
+    }
+    
+    .individual-support-item-description {
+        font-size: 14px;
+    }
+    
+    .individual-support-image {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .individual-hero-section {
+        height: 240px;
+    }
+    
+    .individual-hero-page-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    
+    .individual-hero-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .individual-hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-intro {
+        font-size: 15px;
+    }
+}
+
+/* ===========================
    Contact Page Styles
    =========================== */
 .contact-section {
