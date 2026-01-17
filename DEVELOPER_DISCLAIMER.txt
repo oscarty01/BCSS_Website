@@ -115,7 +115,7 @@ The client (ZebraGo / 浸信會欣悅社會服務處) is SOLELY responsible for:
    - The developer provides only the website files/code, NOT hosting or domain services
 
 5. PRE-LAUNCH CHECKS
-   - Completing the PRE-LAUNCH_CHECKLIST.md before going live
+   - Completing all pre-launch checks as outlined in PRE-LAUNCH_CHECKLIST.md before going live
    - Testing all functionality and links
    - Verifying all contact information is accurate
    - Ensuring all statistics and numbers are current
@@ -132,15 +132,16 @@ The client (ZebraGo / 浸信會欣悅社會服務處) is SOLELY responsible for:
 PROTOTYPE STATUS
 --------------------------------------------------------------------------------
 
-This is a PROTOTYPE website. Before deployment, the client MUST:
+This is a PROTOTYPE website. Before deployment, the client MUST complete all 
+pre-launch checks as outlined in PRE-LAUNCH_CHECKLIST.md, including but not 
+limited to:
 
-1. Review and update ALL content to match current information
-2. Verify ALL contact information is accurate
-3. Complete or remove any placeholder content
-4. Have legal pages reviewed by qualified professionals
-5. Verify all asset licensing and permissions
-6. Test all functionality and links
-7. Complete the pre-launch checklist
+- Reviewing and updating all content to match current information
+- Verifying all contact information is accurate
+- Completing or removing any placeholder content
+- Having legal pages reviewed by qualified professionals
+- Verifying all asset licensing and permissions
+- Testing all functionality and links
 
 The developer provides this prototype "AS IS" without warranties of any kind.
 

@@ -315,30 +315,13 @@
 
 **IMPORTANT LEGAL NOTICE:**
 
-The developer of this website prototype does not assume any legal responsibility for:
-- Misuse of any assets (images, videos, logos, content) provided by the client
-- Copyright infringement resulting from unauthorized use of third-party materials
-- Any legal issues arising from content, images, or media used on the website
-- Compliance with local or international laws and regulations
-- Accuracy of information provided by the client
+**For complete developer disclaimer and legal information, please refer to `DEVELOPER_DISCLAIMER.txt`.**
 
-**Client Responsibility:** The client is solely responsible for:
-- **Obtaining and managing their own web hosting service**
-- **Registering and managing their own domain name**
-- **Configuring DNS settings and domain pointing**
-- **Setting up SSL certificates for HTTPS**
-- Obtaining proper licenses and permissions for all assets used
-- Verifying all content accuracy and legal compliance
-- Ensuring all images, videos, and media have proper rights and consent
-- Reviewing and approving all legal documents (privacy policy, disclaimer, copyright)
-- Compliance with all applicable laws and regulations
-
-**Developer Showcase Rights:**
-- The developer (Oscar Chan) retains the **PERMANENT right** to showcase this **prototype version** to others as a personal project portfolio piece
-- The developer will showcase **ONLY the prototype version that existed before January 23, 2026 (23/01/2026)**
-- After the website is officially deployed and goes live, the developer will **NOT showcase the live/deployed version**
-- The developer will only showcase the prototype version (as it existed before 23/01/2026) for portfolio purposes, regardless of when the showcase occurs
-- By accepting this prototype, the client acknowledges the developer's **permanent right** to showcase the prototype version (pre-23/01/2026) for portfolio purposes
+**Summary:**
+- The developer does not assume legal responsibility for content, assets, legal compliance, or post-deployment issues
+- The client is solely responsible for hosting, domain, asset licensing, content verification, and legal compliance
+- The developer retains permanent right to showcase the prototype version (pre-23/01/2026) for portfolio purposes
+- The developer will NOT showcase the live/deployed version after launch
 
 **Recommendation:** The client should have all legal pages and content reviewed by qualified legal professionals before launch.
 
