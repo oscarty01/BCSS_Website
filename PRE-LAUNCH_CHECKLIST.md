@@ -272,10 +272,12 @@
 - [ ] Contact information for technical support
 
 ### 10.4 Launch Plan
-- [ ] Domain name registered and configured
-- [ ] Hosting service set up
-- [ ] DNS settings configured
+- [ ] **Domain name registered and configured** (Client's responsibility)
+- [ ] **Hosting service set up** (Client's responsibility)
+- [ ] **DNS settings configured** (Client's responsibility)
+- [ ] **SSL certificate installed** (Client's responsibility)
 - [ ] Email accounts set up (if using domain email)
+- [ ] **Note:** The developer provides only the website files/code. The client is responsible for obtaining their own hosting and domain services.
 
 ---
 
@@ -297,14 +299,15 @@
 
 ## PRIORITY ITEMS (Must Complete Before Launch)
 
-1. **Copyright notice** - Remove developer attribution, verify year and entity name
-2. **Contact information** - Verify all contact details are accurate
-3. **WhatsApp link** - Fix broken/placeholder WhatsApp link
-4. **Incomplete pages** - Complete or remove pages with placeholder content
-5. **Image licensing** - Verify all images have proper rights
-6. **Legal review** - Have privacy policy, disclaimer, and copyright page reviewed
-7. **Statistics** - Verify all numbers are current and accurate
-8. **External links** - Test all external links work correctly
+1. **Hosting and Domain** - Obtain web hosting service and register domain name (Client's responsibility)
+2. **Copyright notice** - Remove developer attribution, verify year and entity name
+3. **Contact information** - Verify all contact details are accurate
+4. **WhatsApp link** - Fix broken/placeholder WhatsApp link
+5. **Incomplete pages** - Complete or remove pages with placeholder content
+6. **Image licensing** - Verify all images have proper rights
+7. **Legal review** - Have privacy policy, disclaimer, and copyright page reviewed
+8. **Statistics** - Verify all numbers are current and accurate
+9. **External links** - Test all external links work correctly
 
 ---
 
@@ -320,11 +323,22 @@ The developer of this website prototype does not assume any legal responsibility
 - Accuracy of information provided by the client
 
 **Client Responsibility:** The client is solely responsible for:
+- **Obtaining and managing their own web hosting service**
+- **Registering and managing their own domain name**
+- **Configuring DNS settings and domain pointing**
+- **Setting up SSL certificates for HTTPS**
 - Obtaining proper licenses and permissions for all assets used
 - Verifying all content accuracy and legal compliance
 - Ensuring all images, videos, and media have proper rights and consent
 - Reviewing and approving all legal documents (privacy policy, disclaimer, copyright)
 - Compliance with all applicable laws and regulations
+
+**Developer Showcase Rights:**
+- The developer (Oscar Chan) retains the **PERMANENT right** to showcase this **prototype version** to others as a personal project portfolio piece
+- The developer will showcase **ONLY the prototype version that existed before January 23, 2026 (23/01/2026)**
+- After the website is officially deployed and goes live, the developer will **NOT showcase the live/deployed version**
+- The developer will only showcase the prototype version (as it existed before 23/01/2026) for portfolio purposes, regardless of when the showcase occurs
+- By accepting this prototype, the client acknowledges the developer's **permanent right** to showcase the prototype version (pre-23/01/2026) for portfolio purposes
 
 **Recommendation:** The client should have all legal pages and content reviewed by qualified legal professionals before launch.
 
@@ -333,6 +347,7 @@ The developer of this website prototype does not assume any legal responsibility
 ## NOTES FOR CLIENT
 
 - This is a prototype website. All content should be reviewed and updated to match your organization's current information and standards.
+- **IMPORTANT: The developer provides only the website files/code. You are responsible for obtaining your own web hosting service and domain name.**
 - Consider having a legal professional review all legal pages (privacy, disclaimer, copyright).
 - Some pages contain placeholder content that needs to be completed or removed.
 - The copyright year shows 2026 - verify if this is correct for your launch date.

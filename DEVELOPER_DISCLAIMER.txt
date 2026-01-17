@@ -1,0 +1,186 @@
+================================================================================
+                    DEVELOPER DISCLAIMER AND NOTICE
+                         ZebraGo Website Prototype
+================================================================================
+
+DEVELOPER INFORMATION
+--------------------------------------------------------------------------------
+This website prototype was developed by: Oscar Chan
+
+The prototype includes:
+- HTML structure and markup
+- CSS styling and responsive design
+- JavaScript functionality (language switching, carousel, etc.)
+- Basic content structure and layout
+
+================================================================================
+
+DEVELOPER SHOWCASE RIGHTS
+--------------------------------------------------------------------------------
+
+The developer (Oscar Chan) retains the right to:
+
+1. SHOWCASE PROTOTYPE VERSION (PERMANENT RIGHT)
+   - Showcase this prototype version to others as a personal project portfolio piece
+   - Use screenshots, code snippets, or demonstrations of the prototype
+   - Include this project in portfolio, resume, or professional profiles
+   - Share the prototype with potential employers, clients, or collaborators
+   - **This right is PERMANENT and does not expire**
+
+2. VERSION RESTRICTION
+   - The developer will showcase ONLY the prototype version that existed before
+     January 23, 2026 (23/01/2026)
+   - The developer will NOT showcase the live/deployed version of the website
+     after it goes into production
+   - The developer will only showcase the prototype version (as it existed before
+     23/01/2026) for portfolio purposes, regardless of when the showcase occurs
+
+3. CLIENT ACKNOWLEDGMENT
+   - By accepting this prototype, the client acknowledges the developer's
+     PERMANENT right to showcase the prototype version (as it existed before
+     23/01/2026) for portfolio purposes
+   - The client understands that showcasing the prototype does not grant the
+     developer any rights to the deployed website or its content
+   - The client acknowledges that the developer will not showcase the live/deployed
+     version of the website
+
+================================================================================
+
+IMPORTANT LEGAL DISCLAIMER
+--------------------------------------------------------------------------------
+
+The developer (Oscar Chan) does NOT assume any legal responsibility for:
+
+1. CONTENT AND ASSETS
+   - Accuracy of any content, text, or information provided by the client
+   - Licensing, copyright, or usage rights of any images, videos, logos, or media
+   - Misuse of any assets (images, videos, logos, content) provided by the client
+   - Copyright infringement resulting from unauthorized use of third-party materials
+   - Any legal issues arising from content, images, or media used on the website
+
+2. LEGAL COMPLIANCE
+   - Compliance with local, national, or international laws and regulations
+   - Data protection and privacy law compliance (PDPO, GDPR, etc.)
+   - Accessibility standards compliance (WCAG, etc.)
+   - Professional services regulations or licensing requirements
+   - Any legal issues arising from the website's operation or content
+
+3. POST-DEPLOYMENT ISSUES
+   - Website functionality after deployment
+   - Security vulnerabilities or breaches
+   - Data loss or corruption
+   - Server or hosting issues
+   - Third-party service integrations (Google Maps, Forms, etc.)
+   - Broken links or external dependencies
+   - Performance issues or downtime
+
+4. BUSINESS OPERATIONS
+   - Accuracy of service descriptions or claims
+   - Professional qualifications or certifications of team members
+   - Business operations or service delivery
+   - Client relationships or customer service issues
+
+================================================================================
+
+CLIENT RESPONSIBILITIES
+--------------------------------------------------------------------------------
+
+The client (ZebraGo / 浸信會欣悅社會服務處) is SOLELY responsible for:
+
+1. CONTENT VERIFICATION
+   - Verifying all content accuracy and legal compliance
+   - Reviewing and approving all text, images, and media
+   - Ensuring all information is current and accurate
+
+2. ASSET LICENSING
+   - Obtaining proper licenses and permissions for ALL assets used
+   - Verifying all images, videos, and media have proper rights and consent
+   - Ensuring partner logos are used with permission
+   - Obtaining consent forms for any photos of individuals (students, clients, etc.)
+
+3. LEGAL REVIEW
+   - Having all legal pages reviewed by qualified legal professionals:
+     * Privacy Policy (pages/privacy.html)
+     * Disclaimer (pages/disclaimer.html)
+     * Copyright Notice (pages/copyright.html)
+   - Ensuring compliance with all applicable laws and regulations
+   - Verifying professional service claims and qualifications
+
+4. HOSTING AND DOMAIN
+   - **Obtaining and managing their own web hosting service**
+   - **Registering and managing their own domain name**
+   - **Configuring DNS settings and domain pointing**
+   - **Setting up SSL certificates for HTTPS**
+   - **Managing hosting account, billing, and renewals**
+   - The developer provides only the website files/code, NOT hosting or domain services
+
+5. PRE-LAUNCH CHECKS
+   - Completing the PRE-LAUNCH_CHECKLIST.md before going live
+   - Testing all functionality and links
+   - Verifying all contact information is accurate
+   - Ensuring all statistics and numbers are current
+
+6. POST-DEPLOYMENT
+   - Website maintenance and updates
+   - Content management and updates
+   - Security monitoring and updates
+   - Backup and disaster recovery
+   - Ongoing technical support (if needed, arrange separately)
+
+================================================================================
+
+PROTOTYPE STATUS
+--------------------------------------------------------------------------------
+
+This is a PROTOTYPE website. Before deployment, the client MUST:
+
+1. Review and update ALL content to match current information
+2. Verify ALL contact information is accurate
+3. Complete or remove any placeholder content
+4. Have legal pages reviewed by qualified professionals
+5. Verify all asset licensing and permissions
+6. Test all functionality and links
+7. Complete the pre-launch checklist
+
+The developer provides this prototype "AS IS" without warranties of any kind.
+
+================================================================================
+
+NO WARRANTY
+--------------------------------------------------------------------------------
+
+THE DEVELOPER PROVIDES THIS WEBSITE PROTOTYPE "AS IS" WITHOUT WARRANTY OF ANY 
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. 
+
+IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, 
+OUT OF, OR IN CONNECTION WITH THE WEBSITE OR THE USE OR OTHER DEALINGS IN THE 
+WEBSITE.
+
+================================================================================
+
+ACKNOWLEDGMENT
+--------------------------------------------------------------------------------
+
+By using, deploying, or publishing this website prototype, the client 
+acknowledges that:
+
+1. They have read and understood this disclaimer
+2. They accept full responsibility for all content and assets
+3. They will complete all pre-launch checks before deployment
+4. They will have all legal pages reviewed by qualified professionals
+5. The developer is not responsible for any issues after deployment
+
+================================================================================
+
+For questions or concerns, please refer to the PRE-LAUNCH_CHECKLIST.md file
+for detailed review requirements.
+
+================================================================================
+
+Document Created: 2025
+Developer: Oscar Chan
+Project: ZebraGo Website Prototype
+
+================================================================================
