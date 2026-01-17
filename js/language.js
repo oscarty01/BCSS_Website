@@ -437,7 +437,12 @@ const translations = {
         'corporate.csr.sponsor.desc': '企業每完成一個模組，部分收益將支持我們為一間資源匱乏的學校提供免費服務。',
         'corporate.csr.volunteer.title': '企業義工',
         'corporate.csr.volunteer.desc': '安排員工參與我們的社區共融活動，身體力行回饋社會。',
-        'corporate.cta.button': '查詢/預約服務'
+        'corporate.cta.button': '查詢/預約服務',
+        
+        // 404 Error Page
+        'error404.subtitle': '頁面未找到',
+        'error404.description': '抱歉，您訪問的頁面不存在或已被移動。',
+        'error404.button': '返回首頁'
     },
     'zh-CN': {
         // Page Titles (for browser tab)
@@ -874,7 +879,12 @@ const translations = {
         'corporate.csr.sponsor.desc': '企业每完成一个模块，部分收益将支持我们为一间资源匮乏的学校提供免费服务。',
         'corporate.csr.volunteer.title': '企业义工',
         'corporate.csr.volunteer.desc': '安排员工参与我们的社区共融活动，身体力行回馈社会。',
-        'corporate.cta.button': '查询/预约服务'
+        'corporate.cta.button': '查询/预约服务',
+        
+        // 404 Error Page
+        'error404.subtitle': '页面未找到',
+        'error404.description': '抱歉，您访问的页面不存在或已被移动。',
+        'error404.button': '返回首页'
     },
     'en': {
         // Page Titles (for browser tab)
@@ -1311,7 +1321,12 @@ const translations = {
         'corporate.csr.sponsor.desc': 'For each module completed by the enterprise, a portion of the proceeds will support us in providing free services to a resource-deprived school.',
         'corporate.csr.volunteer.title': 'Corporate Volunteering',
         'corporate.csr.volunteer.desc': 'Arrange employees to participate in our community inclusion activities, giving back to society through action.',
-        'corporate.cta.button': 'Inquiry/Book Service'
+        'corporate.cta.button': 'Inquiry/Book Service',
+        
+        // 404 Error Page
+        'error404.subtitle': 'Page Not Found',
+        'error404.description': 'Sorry, the page you are looking for does not exist or has been moved.',
+        'error404.button': 'Return to Homepage'
     }
 };
 
