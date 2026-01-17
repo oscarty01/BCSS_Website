@@ -85,14 +85,16 @@ img {
     background: var(--primary-green);
     color: var(--white);
     font-size: 14px;
+    min-height: 50px;
 }
 
 .top-bar .container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 8px 20px;
+    padding: 12px 20px;
     gap: 30px;
+    min-height: 50px;
 }
 
 .font-size-control {
@@ -145,9 +147,11 @@ img {
 }
 
 .lang-switch, .simple-chinese, .traditional-chinese {
-    padding: 5px 10px;
-    border-radius: 3px;
+    padding: 8px 14px;
+    border-radius: 4px;
     transition: var(--transition-base);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .lang-switch:hover, .simple-chinese:hover, .traditional-chinese:hover {
@@ -165,15 +169,15 @@ img {
 }
 
 .social-icons a {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: rgba(255,255,255,0.2);
     transition: var(--transition-base);
-    padding: 4px;
+    padding: 5px;
 }
 
 .social-icons a:hover {
@@ -2539,12 +2543,13 @@ main {
     }
     
     .top-bar {
-        font-size: 13px;
+        font-size: 14px;
     }
     
     .top-bar .container {
         gap: 15px;
-        padding: 8px 15px;
+        padding: 12px 15px;
+        min-height: 50px;
     }
     
     .font-size-control {
@@ -2561,8 +2566,8 @@ main {
     }
     
     .lang-switch, .simple-chinese, .traditional-chinese {
-        padding: 5px 10px;
-        font-size: 13px;
+        padding: 7px 12px;
+        font-size: 14px;
     }
     
     .social-icons {
@@ -3299,12 +3304,20 @@ main {
     }
     
     /* Center align top-bar content when zoom buttons are hidden */
+    .top-bar {
+        font-size: 13px;
+    }
+    
     .top-bar .container {
         justify-content: center;
+        gap: 12px;
+        padding: 12px 15px;
+        min-height: 50px;
     }
     
     .top-links {
         justify-content: center;
+        gap: 12px;
     }
     
     /* About page title banner - mobile */
@@ -3868,8 +3881,8 @@ main {
     }
     
     .lang-switch, .simple-chinese, .traditional-chinese {
-        padding: 4px 8px;
-        font-size: 12px;
+        padding: 6px 10px;
+        font-size: 13px;
     }
     
     .main-header .container {
@@ -4068,11 +4081,17 @@ main {
         height: auto;
     }
     
+    .top-bar {
+        font-size: 13px;
+    }
+    
     .top-bar .container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
+        padding: 12px clamp(12px, 3vw, 20px);
+        min-height: 50px;
     }
     
     .main-header .container {
@@ -4098,23 +4117,23 @@ main {
     
     .top-links {
         order: 2;
-        gap: 6px;
+        gap: 10px;
     }
     
     .lang-switch, .simple-chinese, .traditional-chinese {
-        padding: 3px 6px;
-        font-size: 11px;
+        padding: 6px 12px;
+        font-size: 13px;
         white-space: nowrap;
     }
     
     .social-icons {
-        gap: 5px;
+        gap: 10px;
     }
     
     .social-icons a {
-        width: 18px;
-        height: 18px;
-        padding: 3px;
+        width: 28px;
+        height: 28px;
+        padding: 5px;
     }
     
     .carousel {
@@ -4163,28 +4182,37 @@ main {
 }
 
 @media (max-width: 414px) {
-    /* iPhone XR and similar sizes - further reduce sizes */
+    /* iPhone XR and similar sizes - larger but prevent overflow */
+    .top-bar {
+        font-size: 12px;
+    }
+    
     .top-bar .container {
-        gap: 8px;
+        gap: 10px;
+        padding: 12px clamp(10px, 2.5vw, 15px);
+        min-height: 50px;
     }
     
     .top-links {
-        gap: 4px;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .lang-switch, .simple-chinese, .traditional-chinese {
-        padding: 2px 5px;
-        font-size: 10px;
+        padding: 6px 10px;
+        font-size: 12px;
+        white-space: nowrap;
     }
     
     .social-icons {
-        gap: 4px;
+        gap: 8px;
     }
     
     .social-icons a {
-        width: 16px;
-        height: 16px;
-        padding: 2px;
+        width: 26px;
+        height: 26px;
+        padding: 4px;
     }
     
     .carousel-control {
