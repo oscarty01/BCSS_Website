@@ -3,6 +3,8 @@
 
 **IMPORTANT:** This checklist must be completed before the website goes live. Please review each item and make necessary updates to ensure compliance with regulations and your organization's standards.
 
+**VERSION CONTROL:** If there are any version discrepancies between documents or files, always refer to the version in the GitHub repositories as the newest standard.
+
 ---
 
 ## 1. COPYRIGHT & LEGAL NOTICES

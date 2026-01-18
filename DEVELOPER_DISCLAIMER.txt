@@ -136,6 +136,10 @@ This is a PROTOTYPE website. Before deployment, the client MUST complete all
 pre-launch checks as outlined in PRE-LAUNCH_CHECKLIST.md, including but not 
 limited to:
 
+**VERSION CONTROL:** If there are any version discrepancies between documents 
+or files, always refer to the version in the GitHub repositories as the newest 
+standard.
+
 - Reviewing and updating all content to match current information
 - Verifying all contact information is accurate
 - Completing or removing any placeholder content
