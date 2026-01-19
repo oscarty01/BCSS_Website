@@ -63,14 +63,19 @@
 
 ### 2.2 Social Media Links
 - [ ] Verify all social media links are correct and active:
+  - [ ] **Location:** All links are centralized in `js/siteLinks.js` in the `socialLinksConfig` object
   - [ ] Facebook: https://www.facebook.com/tpbcss.zebrago
   - [ ] Instagram: https://www.instagram.com/tpbcss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
   - [ ] YouTube: https://www.youtube.com/@tpbcss8352
   - [ ] LinkedIn: https://www.linkedin.com/company/tpbcss/
-  - [ ] WhatsApp: Currently links to 404 page or placeholder - **ACTION REQUIRED**
+  - [ ] WhatsApp: Currently links to '#' - **ACTION REQUIRED** - Update in `js/siteLinks.js`
 
 ### 2.3 External Links
 - [ ] Verify all external links work correctly:
+  - [ ] **Navigation & Footer Links:** Centralized in `js/siteLinks.js`
+    - [ ] Logo links (ZebraGo and BSCC) in `logoLinksConfig`
+    - [ ] Navigation menu links in `navigationConfig`
+    - [ ] Footer links in `footerLinksConfig`
   - [ ] BSCC main website: https://www.tpbcss.org/
   - [ ] Donation page: https://www.tpbcss.org/Support-Us/Donation
   - [ ] Partner organization links (in About page)
@@ -304,12 +309,13 @@
 1. **Hosting and Domain** - Obtain web hosting service and register domain name (Client's responsibility)
 2. **Copyright notice** - Remove developer attribution, verify year and entity name
 3. **Contact information** - Verify all contact details are accurate
-4. **WhatsApp link** - Fix broken/placeholder WhatsApp link
+4. **WhatsApp link** - Update WhatsApp link in `js/siteLinks.js` (currently set to '#')
 5. **Incomplete pages** - Complete or remove pages with placeholder content
 6. **Image licensing** - Verify all images have proper rights
 7. **Legal review** - Have privacy policy, disclaimer, and copyright page reviewed
 8. **Statistics** - Verify all numbers are current and accurate
 9. **External links** - Test all external links work correctly
+10. **Centralized Links** - Verify all links in `js/siteLinks.js` are correct (social media, navigation, footer, logos)
 
 ---
 

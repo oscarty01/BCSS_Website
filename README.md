@@ -75,13 +75,14 @@ This is a multilingual website prototype for **ZebraGo (斑馬線ZebraGo)**, a m
    - Special events section with PDF links
    - Google Maps integration
    - Social media links integration
+   - Centralized link management system (all navigation, footer, and social links in one file)
 
 ---
 
 ## 📁 File Structure
 
 ```
-BSCC Website/
+BCSS_Website/
 │
 ├── index.html              # Homepage
 ├── pages/                  # All page files
@@ -106,15 +107,16 @@ BSCC Website/
 ├── js/
 │   ├── main.js            # Core functionality
 │   ├── carousel.js        # Carousel functionality
-│   └── language.js        # Language switching system
+│   ├── language.js        # Language switching system
+│   └── siteLinks.js       # Centralized link management (social media, navigation, footer, logos)
 │
 ├── images/                # All image assets
 │   ├── Mainpage/
 │   │   ├── banner/        # Logos, social icons
-│   │   ├── carousel/      # Carousel background images
+│   │   ├── carousel/       # Carousel background images
 │   │   ├── introduction/  # Service icons, SDG images
-│   │   ├── stats/         # Stat icons, partner logos
-│   │   └── support/       # Support section images
+│   │   ├── stats/          # Stat icons, partner logos
+│   │   └── support/        # Support section images
 │   ├── About/             # About page images
 │   ├── Contact/           # Contact page icons
 │   ├── News/              # News article images
@@ -521,17 +523,49 @@ Edit `pages/contact.html`:
 
 ### Updating Social Media Links
 
-Edit the social icons section in the header of any HTML file:
+**All social media links are now centralized in `js/siteLinks.js`.** To update social media links:
 
-```html
-<a href="YOUR_URL" aria-label="Platform" target="_blank">
-    <img src="images/Mainpage/banner/facebook.png" alt="Facebook">
-</a>
+1. Open `js/siteLinks.js`
+2. Find the `socialLinksConfig` object
+3. Update the URL for the desired platform:
+
+```javascript
+const socialLinksConfig = {
+    facebook: {
+        url: 'https://your-new-facebook-url.com',  // Update this
+        ariaLabel: 'Facebook',
+        icon: 'facebook.png'
+    },
+    // ... other platforms
+};
 ```
+
+**Note:** Changes in `siteLinks.js` will automatically apply to all pages. You no longer need to edit individual HTML files.
+
+### Updating Navigation and Footer Links
+
+**All navigation and footer links are also centralized in `js/siteLinks.js`:**
+
+- **Navigation links:** Edit the `navigationConfig` object
+- **Footer links:** Edit the `footerLinksConfig` object  
+- **Logo links:** Edit the `logoLinksConfig` object
+
+Changes will automatically apply to all pages across the website.
 
 ### Changing Copyright Year
 
 Search and replace `©2026` in all HTML files, or use find/replace in your editor.
+
+### Updating Links (Centralized System)
+
+**All site links are now managed in `js/siteLinks.js`:**
+
+- **Social Media Links:** Edit `socialLinksConfig` object
+- **Navigation Menu:** Edit `navigationConfig` object
+- **Footer Links:** Edit `footerLinksConfig` object
+- **Logo Links:** Edit `logoLinksConfig` object
+
+This centralized system means you only need to update links in one place, and changes will automatically apply to all 15 pages across the website.
 
 ---
 
